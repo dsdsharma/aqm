@@ -484,7 +484,7 @@ export default function DigitalBanking() {
               target="_blank"
               rel="noreferrer"
             >
-              https://www.yesbank.in/personal-banking/yes-individual/cards/credit-cards/quick-loan
+              https://www.yesbank.in/personal-banking/yes-individual/cards/credit-cards/quick
             </a>
           </p>
           <p className="mt-2">
