@@ -16,12 +16,12 @@ export default function Navbar() {
 
       {/* Menu Items */}
       <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
-        <Link to="/about" className="hover:text-cyan-400 transition">
-          About
+        <Link to="/services" className="hover:text-cyan-400 transition">
+          Services
         </Link>
 
         {/* Dropdown Menu */}
-        <div
+        {/* <div
           className="relative"
           onMouseEnter={() => setIsProductsOpen(true)}
           onMouseLeave={() => setIsProductsOpen(false)}
@@ -33,24 +33,35 @@ export default function Navbar() {
 
           {isProductsOpen && (
             <div className="absolute top-full mt-2 w-40 bg-black text-white shadow-lg rounded-md">
-              <Link to="/product1" className="block px-4 py-2 hover:bg-gray-800">
+              <Link
+                to="/product1"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
                 Overview
               </Link>
-              <Link to="/product2" className="block px-4 py-2 hover:bg-gray-800">
+              <Link
+                to="/product2"
+                className="block px-4 py-2 hover:bg-gray-800"
+              >
                 Hyper
               </Link>
             </div>
           )}
-        </div>
 
-        <Link to="/digital" className="hover:text-cyan-400 transition">
-          Digital Banking
+        </div> */}
+
+        <Link to="/Caascloud" className="hover:text-cyan-400 transition">
+          CaaS Cloud
         </Link>
-        <Link to="/ethera" className="hover:text-cyan-400 transition">
-          Ethera
+
+        <Link to="/industries" className="hover:text-cyan-400 transition">
+          Industries
         </Link>
-        <Link to="/careers" className="hover:text-cyan-400 transition">
-          Careers
+        <Link to="/aboutus" className="hover:text-cyan-400 transition">
+          About Us
+        </Link>
+        <Link to="/contact" className="hover:text-cyan-400 transition">
+          Contact
         </Link>
         <Link to="/technology" className="hover:text-cyan-400 transition">
           Technology

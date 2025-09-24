@@ -1,14 +1,12 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
-
-import About from "./Pages/About"; // adjust path if needed
-import DigitalBanking from "./Pages/DigitalBanking";
-import Ethera from "./Pages/Ethera";
-import Careers from "./Pages/Careers";
+import Services from "./Pages/Services";
+import Industries from "./Pages/Indutries";
+import AboutUs from "./Pages/AboutUs";
+import Contact from "./Pages/Contact";
 import Technology from "./Pages/Technology";
 import Newsroom from "./Pages/Newsroom";
-
 
 function App() {
   return (
@@ -17,15 +15,14 @@ function App() {
 
       <Routes>
         {/* When URL is /about → load About component */}
-        <Route path="/" element={<Home />} /> 
-        <Route path="/about" element={<About />} />
-        <Route path="/digital" element={<DigitalBanking />} />
-       <Route path="/ethera" element={<Ethera />} />
-       <Route path="/careers" element={<Careers/>} />
-       <Route path="/technology" element={<Technology />} />
-      <Route path="/newsroom" element={<Newsroom />} />
-
-</Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/industries" element={<Industries />} />
+        <Route path="/aboutus" element={<AboutUs />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/technology" element={<Technology />} />
+        <Route path="/newsroom" element={<Newsroom />} />
+      </Routes>
     </Router>
   );
 }

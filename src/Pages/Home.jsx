@@ -1,12 +1,14 @@
-import demoVideo from "../Images/phone.mp4";
+import demoGif from "../Images/hero.mp4";
+import indiaMap from "../Images/india_map.mp4";
+// import demoGif from "../Images/hero.gif";
 import businessImg from "../images/business.jpg";
 import storyImg from "../Images/story.jpg";
 
 import Slider from "react-slick";
 import { ArrowRight } from "lucide-react"; // ✅ Added import
-import "slick-carousel/slick/slick.css";   // ✅ Needed for react-slick
+import "slick-carousel/slick/slick.css"; // ✅ Needed for react-slick
 import "slick-carousel/slick/slick-theme.css";
-import mobImg from "../images/mob.jpg"; // ✅ import image
+import mobImg from "../images/mob.png"; // ✅ import image
 import techVideo from "../images/techno.mp4"; // ✅ background video
 import personImg from "../images/homeBanner.jpg"; // ✅ new image (replace with yours)
 
@@ -20,12 +22,7 @@ import yes from "../images/yes.jpg";
 import citi from "../images/citi.jpg";
 import cibil from "../images/cibil.jpg";
 import indus from "../images/indus.jpg";
-import Footer from "../Pages/Footer"
-
-
-
-
-
+import Footer from "../Pages/Footer";
 
 export default function Home() {
   const settings = {
@@ -46,9 +43,9 @@ export default function Home() {
         {/* Left Side */}
         <div className="w-[30%] flex items-center">
           <div className="ms-20">
-            <h1 className="text-4xl md:text-5xl font-bold leading-snug">
+            <h1 className="text-4xl md:text-5xl font-bold leading-snug text-green-500">
               Powerful Technology <br />
-              for <span className="text-cyan-400">Delinquency</span> <br />
+              for Delinquency <br />
               Management
             </h1>
 
@@ -63,13 +60,21 @@ export default function Home() {
               <div className="mt-4 max-w-md mx-auto">
                 <Slider {...settings}>
                   <div>
-                    <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+                    <img
+                      src={businessImg}
+                      alt="Business"
+                      className="h-12 mx-auto"
+                    />
                   </div>
                   <div>
                     <img src={storyImg} alt="Story" className="h-12 mx-auto" />
                   </div>
                   <div>
-                    <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+                    <img
+                      src={businessImg}
+                      alt="Business"
+                      className="h-12 mx-auto"
+                    />
                   </div>
                   <div>
                     <img src={storyImg} alt="Story" className="h-12 mx-auto" />
@@ -81,14 +86,23 @@ export default function Home() {
         </div>
 
         {/* Right Side - Video */}
+        {/* Right Side - Image */}
+        {/* <div className="w-[70%] flex justify-end">
+          <img
+            src={demoGif}
+            alt="Demo Preview"
+            className="w-full max-w-[650px] rounded-2xl shadow-2xl object-cover transform hover:scale-105 transition duration-500 mt-10 ms-10"
+          />
+        </div> */}
+        {/* Right Side - Video */}
         <div className="w-[70%] flex justify-center">
           <video
-            src={demoVideo}
+            src={demoGif}
             autoPlay
             loop
             muted
             playsInline
-            className="w-full max-w-[800px] rounded-2xl shadow-lg"
+            className="w-full max-w-[600px] rounded-2xl shadow-lg mt-20"
           />
         </div>
       </div>
@@ -97,8 +111,9 @@ export default function Home() {
       <div className="bg-black text-white py-20">
         {/* Section Heading */}
         <div className="w-full text-center mb-16">
-          <h1 className="text-3xl md:text-4xl font-bold text-sky-600">
-            Intelligent, Intuitive, & Inspiring Products
+          <h1 className="text-3xl md:text-4xl font-bold  text-green-500">
+            The AI that runs your collections <br />
+            like an expert
           </h1>
         </div>
 
@@ -118,14 +133,14 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold">
               DIGITAL BANKING SOLUTIONS
             </h2>
-            <p className="text-xl text-sky-400 font-medium">
+            <p className="text-xl  text-green-500 font-medium">
               Innovative banking, simplified
             </p>
             <p className="text-gray-300 leading-relaxed">
-              A product suite to meet all your digital banking needs from sourcing,
-              lending, portfolio management, liability and compliance solutions
-              enabled with robust tech stack, customer centric design, humanistic AI
-              and insightful data.
+              A product suite to meet all your digital banking needs from
+              sourcing, lending, portfolio management, liability and compliance
+              solutions enabled with robust tech stack, customer centric design,
+              humanistic AI and insightful data.
             </p>
 
             <a
@@ -142,7 +157,8 @@ export default function Home() {
       <section className="relative bg-black text-white py-28 flex items-center justify-center text-center overflow-hidden">
         {/* Background Video */}
         <video
-          src={techVideo}
+          src={indiaMap}
+          // src={techVideo}
           autoPlay
           loop
           muted
@@ -155,9 +171,9 @@ export default function Home() {
 
         {/* Content on top of video */}
         <div className="relative z-10 max-w-xl px-6">
-          <p className="text-3xl text-gray-200 mb-4">Unrivaled Technology</p>
+          <p className="text-3xl  text-green-500 mb-4">Unrivaled Technology</p>
 
-          <h1 className="text-3xl md:text-5xl font-bold text-sky-400 mb-6 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-bold  text-green-500 mb-6 leading-tight">
             Leading Edge Applications that <br />
             take you from Insight to Action
           </h1>
@@ -179,17 +195,22 @@ export default function Home() {
         </div>
       </section>
 
+      <h1 className="text-4xl  text-green-500 mb-4 text-center">
+        Building a financially healthy India
+      </h1>
+
       {/* Vision Section */}
       <section className="relative bg-black text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="md:w-1/2 px-6 md:pl-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-sky-400 leading-snug mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold  text-green-500 leading-snug mb-6">
               A Vision for a <br /> Better Credit World
             </h2>
 
             <p className="text-lg text-gray-300 mb-8">
-              We build technology that helps financial institutions reach, <br />
+              We build technology that helps financial institutions reach,{" "}
+              <br />
               engage and influence their delinquent customers <br />
               in a smarter and kinder fashion.
             </p>
@@ -219,7 +240,7 @@ export default function Home() {
       {/* ✅ Partnerships Section */}
       <section className="bg-black text-white py-20 px-6 text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-sky-500">
+        <h2 className="text-3xl md:text-4xl font-bold  text-green-500">
           Deep, Value Added Partnerships
         </h2>
         <p className="text-gray-300 mt-4 text-lg">
@@ -228,66 +249,101 @@ export default function Home() {
         </p>
 
         {/* Logos */}
-       <div className="mt-16 max-w-7xl mx-auto px-6">
-  <Slider
-    dots={false}
-    infinite={true}
-    speed={1500}
-    slidesToShow={5}   // ✅ show 5 logos at a time
-    slidesToScroll={1}
-    autoplay={true}
-    autoplaySpeed={1500}
-    arrows={false}
-    responsive={[
-      {
-        breakpoint: 1024, // tablets
-        settings: { slidesToShow: 4 },
-      },
-      {
-        breakpoint: 768, // mobile
-        settings: { slidesToShow: 2 },
-      },
-    ]}
-  >
-    <div>
-      <img src={icici} alt="ICICI Bank" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={idfc} alt="IDFC First Bank" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={rbl} alt="RBL Bank" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={sbi} alt="SBI" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={axis} alt="AXIS" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={yes} alt="YES" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={citi} alt="CITI" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={cibil} alt="CIBIL" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-    <div>
-      <img src={indus} alt="INDUS" className="h-18 md:h-60 mx-auto object-contain" />
-    </div>
-  </Slider>
-</div>
-
+        <div className="mt-16 max-w-7xl mx-auto px-6">
+          <Slider
+            dots={false}
+            infinite={true}
+            speed={1500}
+            slidesToShow={5} // ✅ show 5 logos at a time
+            slidesToScroll={1}
+            autoplay={true}
+            autoplaySpeed={1500}
+            arrows={false}
+            responsive={[
+              {
+                breakpoint: 1024, // tablets
+                settings: { slidesToShow: 4 },
+              },
+              {
+                breakpoint: 768, // mobile
+                settings: { slidesToShow: 2 },
+              },
+            ]}
+          >
+            <div>
+              <img
+                src={icici}
+                alt="ICICI Bank"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={idfc}
+                alt="IDFC First Bank"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={rbl}
+                alt="RBL Bank"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={sbi}
+                alt="SBI"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={axis}
+                alt="AXIS"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={yes}
+                alt="YES"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={citi}
+                alt="CITI"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={cibil}
+                alt="CIBIL"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+            <div>
+              <img
+                src={indus}
+                alt="INDUS"
+                className="h-18 md:h-60 mx-auto object-contain"
+              />
+            </div>
+          </Slider>
+        </div>
 
         {/* Footer Note */}
         <p className="text-gray-400 mt-16 max-w-4xl mx-auto text-sm leading-relaxed">
-          We enable Banks, NBFCs and others with technology solutions to help in their
-          communications, customer engagements and customer journeys. We are not into
-          lending, disbursements or underwriting business.
+          We enable Banks, NBFCs and others with technology solutions to help in
+          their communications, customer engagements and customer journeys. We
+          are not into lending, disbursements or underwriting business.
         </p>
       </section>
-        <Footer />
+      <Footer />
     </section>
   );
 }
