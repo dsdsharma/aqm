@@ -8,20 +8,20 @@ import Slider from "react-slick";
 import { ArrowRight } from "lucide-react"; // ✅ Added import
 import "slick-carousel/slick/slick.css"; // ✅ Needed for react-slick
 import "slick-carousel/slick/slick-theme.css";
-import mobImg from "../images/mob.png"; // ✅ import image
-import techVideo from "../images/techno.mp4"; // ✅ background video
-import personImg from "../images/homeBanner.jpg"; // ✅ new image (replace with yours)
+import mobImg from "../Images/mob.png"; // ✅ import image
+import techVideo from "../Images/techno.mp4"; // ✅ background video
+import personImg from "../Images/homeBanner.jpg"; // ✅ new image (replace with yours)
 
 // ✅ Partnership Logos
-import icici from "../images/icici.jpg";
-import idfc from "../images/idfc.jpg";
-import rbl from "../images/rbl.jpg";
-import sbi from "../images/sbi.jpg";
-import axis from "../images/axis.jpg";
-import yes from "../images/yes.jpg";
-import citi from "../images/citi.jpg";
-import cibil from "../images/cibil.jpg";
-import indus from "../images/indus.jpg";
+import icici from "../Images/icici.jpg";
+import idfc from "../Images/idfc.jpg";
+import rbl from "../Images/rbl.jpg";
+import sbi from "../Images/sbi.jpg";
+import axis from "../Images/axis.jpg";
+import yes from "../Images/yes.jpg";
+import citi from "../Images/citi.jpg";
+import cibil from "../Images/cibil.jpg";
+import indus from "../Images/indus.jpg";
 import Footer from "../Pages/Footer";
 
 export default function Home() {
