@@ -1,8 +1,8 @@
 import React from "react";
-import demoVideo from "../images/ethvideo.mp4"; // replace with your video path
-import demoVideo1 from "../images/ethvideo1.mp4"; // replace with your video path
-import demoVideo2 from "../images/ethvideo2.mp4"; // replace with your video path
-import demoVideo3 from "../images/ethvideo3.mp4"; // replace with your video path
+import demoVideo from "../Images/ethvideo.mp4"; // replace with your video path
+import demoVideo1 from "../Images/ethvideo1.mp4"; // replace with your video path
+import demoVideo2 from "../Images/ethvideo2.mp4"; // replace with your video path
+import demoVideo3 from "../Images/ethvideo3.mp4"; // replace with your video path
 
 import Footer from "./Footer";
 
