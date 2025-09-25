@@ -1,7 +1,7 @@
 import demoGif from "../Images/hero.mp4";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
-import businessImg from "../images/business.png";
+// import businessImg from "../images/business.png";
 import storyImg from "../Images/story.jpg";
 
 import Slider from "react-slick";
@@ -100,13 +100,13 @@ export default function Home() {
         <div className="mt-4 w-full">
           <Slider {...settings}>
             <div>
-              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+              <img src={storyImg} alt="Business" className="h-12 mx-auto" />
             </div>
             <div>
               <img src={storyImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+              <img src={storyImg} alt="Business" className="h-12 mx-auto" />
             </div>
             <div>
               <img src={storyImg} alt="Story" className="h-12 mx-auto" />
@@ -115,7 +115,7 @@ export default function Home() {
               <img src={storyImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+              <img src={storyImg} alt="Business" className="h-12 mx-auto" />
             </div>
             <div>
               <img src={storyImg} alt="Story" className="h-12 mx-auto" />
