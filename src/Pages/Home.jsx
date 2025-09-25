@@ -1,7 +1,7 @@
 import demoGif from "../Images/hero.mp4";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
-import businessImg from "../images/business.jpg";
+import businessImg from "../images/business.png";
 import storyImg from "../Images/story.jpg";
 
 import Slider from "react-slick";
@@ -29,7 +29,7 @@ export default function Home() {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
@@ -39,11 +39,22 @@ export default function Home() {
   return (
     <section className="bg-black text-white">
       {/* Hero Section */}
-      <div className="flex w-full items-center h-screen px-4">
+      <div className="flex w-full items-center h-[650px] px-4">
         {/* Left Side */}
-        <div className="w-[30%] flex items-center">
+        <div className="w-[60%] flex justify-center">
+          <video
+            src={demoGif}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full max-w-[580px] rounded-2xl shadow-lg mt-20"
+          />
+        </div>
+
+        <div className="w-[40%] flex items-center">
           <div className="ms-20">
-            <h1 className="text-4xl md:text-5xl font-bold leading-snug text-green-500">
+            <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-green-500 mt-20">
               Powerful Technology <br />
               for Delinquency <br />
               Management
@@ -55,8 +66,7 @@ export default function Home() {
             </button>
 
             {/* Carousel */}
-            <div className="mt-10">
-              <h3 className="font-semibold text-lg">Media Mentions</h3>
+            {/* <div className="mt-10">
               <div className="mt-4 max-w-md mx-auto">
                 <Slider {...settings}>
                   <div>
@@ -81,29 +91,36 @@ export default function Home() {
                   </div>
                 </Slider>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
-
-        {/* Right Side - Video */}
-        {/* Right Side - Image */}
-        {/* <div className="w-[70%] flex justify-end">
-          <img
-            src={demoGif}
-            alt="Demo Preview"
-            className="w-full max-w-[650px] rounded-2xl shadow-2xl object-cover transform hover:scale-105 transition duration-500 mt-10 ms-10"
-          />
-        </div> */}
-        {/* Right Side - Video */}
-        <div className="w-[70%] flex justify-center">
-          <video
-            src={demoGif}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full max-w-[600px] rounded-2xl shadow-lg mt-20"
-          />
+      </div>
+      <div className="mt-10">
+        {/* <h3 className="font-semibold text-lg">Media Mentions</h3> */}
+        <div className="mt-4 w-full">
+          <Slider {...settings}>
+            <div>
+              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+          </Slider>
         </div>
       </div>
 
