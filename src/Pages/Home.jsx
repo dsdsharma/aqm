@@ -1,7 +1,16 @@
 import demoGif from "../Images/hero.mp4";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
-import businessImg from "../Images/business.jpg";
+import tpeImg from "../Images/tpe.png";
+import paytmImg from "../Images/paytm.png";
+import sbiImg from "../Images/sbi.png";
+import cholaImg from "../Images/chola.png";
+import rblImg from "../Images/rbl.png";
+import nykaaImg from "../Images/nykaa.png";
+import bajajImg from "../Images/bajaj.png";
+import hclImg from "../Images/hcl.png";
+import pineImg from "../Images/pine.png";
+
 import storyImg from "../Images/story.jpg";
 
 import Slider from "react-slick";
@@ -29,7 +38,7 @@ export default function Home() {
     dots: true,
     infinite: true,
     speed: 800,
-    slidesToShow: 4,
+    slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 1000,
@@ -100,25 +109,31 @@ export default function Home() {
         <div className="mt-4 w-full">
           <Slider {...settings}>
             <div>
-              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+              <img src={tpeImg} alt="Business" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+              <img src={cholaImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+              <img src={nykaaImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={businessImg} alt="Business" className="h-12 mx-auto" />
+              <img src={paytmImg} alt="Business" className="h-12 mx-auto" />
             </div>
             <div>
-              <img src={storyImg} alt="Story" className="h-12 mx-auto" />
+              <img src={bajajImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={hclImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={pineImg} alt="Story" className="h-12 mx-auto" />
             </div>
           </Slider>
         </div>
