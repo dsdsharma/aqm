@@ -154,10 +154,10 @@ export default function Home() {
               Innovative banking, simplified
             </p>
             <p className="text-gray-300 leading-relaxed">
-              A product suite to meet all your digital banking needs from
-              sourcing, lending, portfolio management, liability and compliance
-              solutions enabled with robust tech stack, customer centric design,
-              humanistic AI and insightful data.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem
+              nam quia aut sed in incidunt voluptatum ipsum quis, similique
+              laboriosam, provident vero cum expedita eum consequuntur dolor
+              aliquam recusandae officiis magni adipisci.
             </p>
 
             <a
@@ -196,11 +196,11 @@ export default function Home() {
           </h1>
 
           <p className="text-lg text-gray-100 mb-8">
-            Our technology isn't just ahead of the curve, <br />
-            it is redefining how powerful modern-day <br />
-            advancements in programming can be used <br />
-            to collect better and faster at a fraction of <br />
-            current costs.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+            Lorem ipsum dolor sit amet consectetur. <br />
+            Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
+            Lorem, ipsum dolor.
           </p>
 
           <a
@@ -226,10 +226,9 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-300 mb-8">
-              We build technology that helps financial institutions reach,{" "}
-              <br />
-              engage and influence their delinquent customers <br />
-              in a smarter and kinder fashion.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
+              Lorem ipsum dolor sit amet consectetur.
             </p>
 
             <a
@@ -261,8 +260,8 @@ export default function Home() {
           Deep, Value Added Partnerships
         </h2>
         <p className="text-gray-300 mt-4 text-lg">
-          Together with our clients and partners, <br />
-          we are turning the promise of digital collections into reality
+          Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sed.
         </p>
 
         {/* Logos */}
@@ -355,9 +354,11 @@ export default function Home() {
 
         {/* Footer Note */}
         <p className="text-gray-400 mt-16 max-w-4xl mx-auto text-sm leading-relaxed">
-          We enable Banks, NBFCs and others with technology solutions to help in
-          their communications, customer engagements and customer journeys. We
-          are not into lending, disbursements or underwriting business.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+          doloremque soluta repudiandae quibusdam odio possimus iste nesciunt
+          similique harum! Minus eos, sequi aut quos consectetur tempora
+          explicabo corporis pariatur ut impedit! Iusto non saepe porro
+          explicabo esse?
         </p>
       </section>
       <Footer />
