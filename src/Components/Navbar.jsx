@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom"; // ✅ import Link
+import logoAqm from "../Images/aqm.png";
 
 export default function Navbar() {
   const [isProductsOpen, setIsProductsOpen] = useState(false);
@@ -9,8 +10,8 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md text-white px-8 py-4 flex items-center justify-between shadow-md">
       {/* Logo */}
       <div className="flex items-center space-x-2">
-        <Link to="/" className="text-2xl font-serif tracking-wide">
-          CRED<span className="text-cyan-400">I</span>TAS
+        <Link to="/">
+          <img src={logoAqm} alt="AQM Logo" className="h-16 w-auto" />
         </Link>
       </div>
 
