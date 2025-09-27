@@ -1,4 +1,4 @@
-import demoGif from "../Images/hero.mp4";
+import demoImage from "../Images/heroai.png";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
 import tpeImg from "../Images/tpe.png";
@@ -9,7 +9,12 @@ import rblImg from "../Images/rbl.png";
 import nykaaImg from "../Images/nykaa.png";
 import bajajImg from "../Images/bajaj.png";
 import hclImg from "../Images/hcl.png";
+import yesImg from "../Images/pine.png";
 import pineImg from "../Images/pine.png";
+import axisfinanceImg from "../Images/axisfinance.png";
+import viImg from "../Images/vi.png";
+import puneImg from "../Images/pune.png";
+import axismaxImg from "../Images/axismax.png";
 
 import storyImg from "../Images/story.jpg";
 
@@ -35,74 +40,42 @@ import Footer from "../Pages/Footer";
 
 export default function Home() {
   const settings = {
-    dots: true,
+    dots: false, // remove dots if you want a clean scroll
     infinite: true,
-    speed: 800,
-    slidesToShow: 5,
+    slidesToShow: 8,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1000,
+    speed: 5000, // large speed for smooth movement
+    autoplaySpeed: 0, // no pause between scrolls
+    cssEase: "linear", // makes it continuous instead of step-by-step
     arrows: false,
   };
 
   return (
+    // style={{ backgroundImage: `url(${demoImage})` }}
+
     <section className="bg-black text-white">
       {/* Hero Section */}
-      <div className="flex w-full items-center h-[650px] px-4">
-        {/* Left Side */}
-        <div className="w-[60%] flex justify-center">
-          <video
-            src={demoGif}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full max-w-[580px] rounded-2xl shadow-lg mt-20"
-          />
-        </div>
-
+      {/* <div className="flex w-full items-center h-[650px] px-4"> */}
+      <div
+        className="flex w-full items-center h-[800px] px-4 bg-cover bg-center"
+        style={{ backgroundImage: `url(${demoImage})` }}
+      >
+        {/* Left Side (optional image/video was here, removed) */}
         <div className="w-[40%] flex items-center">
           <div className="ms-20">
             <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-green-500 mt-20">
-              Powerful Technology <br />
-              for Delinquency <br />
-              Management
+              Lorem, ipsum dolor. <br />
+              Lorem, ipsum dolor. <br />
+              Lorem, ipsum.
             </h1>
 
             {/* Button */}
             <button className="mt-6 px-6 py-3 rounded-xl text-black font-medium bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition">
               Request a Demo ▶
             </button>
-
-            {/* Carousel */}
-            {/* <div className="mt-10">
-              <div className="mt-4 max-w-md mx-auto">
-                <Slider {...settings}>
-                  <div>
-                    <img
-                      src={businessImg}
-                      alt="Business"
-                      className="h-12 mx-auto"
-                    />
-                  </div>
-                  <div>
-                    <img src={storyImg} alt="Story" className="h-12 mx-auto" />
-                  </div>
-                  <div>
-                    <img
-                      src={businessImg}
-                      alt="Business"
-                      className="h-12 mx-auto"
-                    />
-                  </div>
-                  <div>
-                    <img src={storyImg} alt="Story" className="h-12 mx-auto" />
-                  </div>
-                </Slider>
-              </div>
-            </div> */}
           </div>
-        </div>
+        </div>{" "}
       </div>
       <div className="mt-10">
         {/* <h3 className="font-semibold text-lg">Media Mentions</h3> */}
@@ -133,7 +106,22 @@ export default function Home() {
               <img src={hclImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
+              <img src={yesImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={axismaxImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={axisfinanceImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={viImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
               <img src={pineImg} alt="Story" className="h-12 mx-auto" />
+            </div>
+            <div>
+              <img src={puneImg} alt="Story" className="h-12 mx-auto" />
             </div>
           </Slider>
         </div>
@@ -144,8 +132,8 @@ export default function Home() {
         {/* Section Heading */}
         <div className="w-full text-center mb-16">
           <h1 className="text-3xl md:text-4xl font-bold  text-green-500">
-            The AI that runs your collections <br />
-            like an expert
+            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
+            Lorem ipsum dolor sit.
           </h1>
         </div>
 
@@ -163,10 +151,10 @@ export default function Home() {
           {/* Right - Text Content */}
           <div className="flex-1 text-center md:text-left space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold">
-              DIGITAL BANKING SOLUTIONS
+              Lorem ipsum dolor sit.
             </h2>
             <p className="text-xl  text-green-500 font-medium">
-              Innovative banking, simplified
+              Lorem ipsum dolor sit.
             </p>
             <p className="text-gray-300 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem
@@ -203,11 +191,11 @@ export default function Home() {
 
         {/* Content on top of video */}
         <div className="relative z-10 max-w-xl px-6">
-          <p className="text-3xl  text-green-500 mb-4">Unrivaled Technology</p>
+          <p className="text-3xl  text-green-500 mb-4">Lorem, ipsum.</p>
 
           <h1 className="text-3xl md:text-5xl font-bold  text-green-500 mb-6 leading-tight">
-            Leading Edge Applications that <br />
-            take you from Insight to Action
+            Lorem ipsum dolor sit. <br />
+            Lorem ipsum dolor sit, amet consectetur adipisicing.
           </h1>
 
           <p className="text-lg text-gray-100 mb-8">
@@ -228,7 +216,7 @@ export default function Home() {
       </section>
 
       <h1 className="text-4xl  text-green-500 mb-4 text-center">
-        Building a financially healthy India
+        Lorem ipsum dolor sit amet consectetur.
       </h1>
 
       {/* Vision Section */}
@@ -237,7 +225,7 @@ export default function Home() {
           {/* Left Content */}
           <div className="md:w-1/2 px-6 md:pl-16">
             <h2 className="text-4xl md:text-5xl font-bold  text-green-500 leading-snug mb-6">
-              A Vision for a <br /> Better Credit World
+              Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
             </h2>
 
             <p className="text-lg text-gray-300 mb-8">
@@ -272,7 +260,7 @@ export default function Home() {
       <section className="bg-black text-white py-20 px-6 text-center">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold  text-green-500">
-          Deep, Value Added Partnerships
+          Lorem ipsum dolor sit amet.
         </h2>
         <p className="text-gray-300 mt-4 text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing. <br />

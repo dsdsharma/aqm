@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { ChevronDown } from "lucide-react";
 import { Link } from "react-router-dom"; // ✅ import Link
 import logoAqm from "../Images/aqm.png";
 
@@ -21,36 +20,6 @@ export default function Navbar() {
           Services
         </Link>
 
-        {/* Dropdown Menu */}
-        {/* <div
-          className="relative"
-          onMouseEnter={() => setIsProductsOpen(true)}
-          onMouseLeave={() => setIsProductsOpen(false)}
-        >
-          <button className="flex items-center space-x-1 hover:text-cyan-400 transition">
-            <span>Products</span>
-            <ChevronDown size={16} />
-          </button>
-
-          {isProductsOpen && (
-            <div className="absolute top-full mt-2 w-40 bg-black text-white shadow-lg rounded-md">
-              <Link
-                to="/product1"
-                className="block px-4 py-2 hover:bg-gray-800"
-              >
-                Overview
-              </Link>
-              <Link
-                to="/product2"
-                className="block px-4 py-2 hover:bg-gray-800"
-              >
-                Hyper
-              </Link>
-            </div>
-          )}
-
-        </div> */}
-
         <Link to="/Caascloud" className="hover:text-cyan-400 transition">
           CaaS Cloud
         </Link>
@@ -63,12 +32,6 @@ export default function Navbar() {
         </Link>
         <Link to="/contact" className="hover:text-cyan-400 transition">
           Contact
-        </Link>
-        <Link to="/technology" className="hover:text-cyan-400 transition">
-          Technology
-        </Link>
-        <Link to="/newsroom" className="hover:text-cyan-400 transition">
-          Newsroom
         </Link>
       </div>
 

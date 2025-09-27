@@ -5,8 +5,6 @@ import Services from "./Pages/Services";
 import Industries from "./Pages/Indutries";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
-import Technology from "./Pages/Technology";
-import Newsroom from "./Pages/Newsroom";
 
 function App() {
   return (
@@ -20,8 +18,6 @@ function App() {
         <Route path="/industries" element={<Industries />} />
         <Route path="/aboutus" element={<AboutUs />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="/newsroom" element={<Newsroom />} />
       </Routes>
     </Router>
   );
