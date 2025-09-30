@@ -1,4 +1,4 @@
-import demoImage from "../Images/heroai.png";
+import demoImage from "../Images/heroimage.png";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
 import tpeImg from "../Images/tpe.png";
@@ -22,7 +22,7 @@ import Slider from "react-slick";
 import { ArrowRight } from "lucide-react"; // ✅ Added import
 import "slick-carousel/slick/slick.css"; // ✅ Needed for react-slick
 import "slick-carousel/slick/slick-theme.css";
-import mobImg from "../Images/mob.png"; // ✅ import image
+import mobImg from "../Images/lpimage.png"; // ✅ import image
 import techVideo from "../Images/techno.mp4"; // ✅ background video
 import personImg from "../Images/homeBanner.jpg"; // ✅ new image (replace with yours)
 
@@ -57,23 +57,24 @@ export default function Home() {
     <section className="bg-black text-white">
       {/* Hero Section */}
       {/* <div className="flex w-full items-center h-[650px] px-4"> */}
+      <img src={demoImage}></img>
       <div
-        className="flex w-full items-center h-[800px] px-4 bg-cover bg-center"
-        style={{ backgroundImage: `url(${demoImage})` }}
+      //className="flex w-full items-center h-[800px] px-4 bg-cover bg-center"
+      //style={{ backgroundImage: `url(${demoImage})` }}
       >
         {/* Left Side (optional image/video was here, removed) */}
         <div className="w-[40%] flex items-center">
           <div className="ms-20">
-            <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-green-500 mt-20">
+            {/* <h1 className="text-4xl md:text-5xl font-semibold leading-snug text-green-500 mt-20">
               Lorem, ipsum dolor. <br />
               Lorem, ipsum dolor. <br />
               Lorem, ipsum.
-            </h1>
+            </h1> */}
 
             {/* Button */}
-            <button className="mt-6 px-6 py-3 rounded-xl text-black font-medium bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition">
+            {/* <button className="mt-6 px-6 py-3 rounded-xl text-black font-medium bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition">
               Request a Demo ▶
-            </button>
+            </button> */}
           </div>
         </div>{" "}
       </div>
