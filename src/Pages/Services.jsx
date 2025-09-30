@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
 
-import teamImg from "../Images/ourstory.jpg";
+// import teamImg from "../Images/ourstory.jpg";
 
 // Replace these with actual image paths
 import person1 from "../Images/person1.jpg";
@@ -70,7 +70,7 @@ export default function OurStory() {
       <div className="pt-24"></div>
 
       {/* Hero Image */}
-      <div className="relative">
+      {/* <div className="relative">
         <img
           src={teamImg}
           alt="Our Team"
@@ -86,7 +86,7 @@ export default function OurStory() {
         >
           Our Story
         </h2>
-      </div>
+      </div> */}
 
       {/* Description */}
       <section className="bg-black text-white py-16 px-8">
@@ -97,7 +97,7 @@ export default function OurStory() {
             }`}
           >
             <h1 className="text-3xl md:text-4xl font-bold leading-snug">
-              Next-Gen Technology <br /> for the Credit Industry
+              Lorem, ipsum dolor. <br /> Lorem ipsum dolor sit.
             </h1>
           </div>
           <div
@@ -106,11 +106,9 @@ export default function OurStory() {
             }`}
           >
             <p className="text-gray-300 text-lg">
-              Creditas is a financial technology organization headquartered in
-              Gurgaon that uses machine learning to help lenders optimize their
-              collections and recovery performance. Over the last 6 years,
-              Creditas has grown to become India's leading technology provider
-              in the delinquency management space.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+              ullam provident repudiandae, at amet sit iure ipsam iste incidunt
+              aliquam tempore aliquid expedita consequatur fuga!
             </p>
           </div>
         </div>
@@ -137,49 +135,49 @@ export default function OurStory() {
       </section>
 
       {/* Why Creditas */}
-      <section className="relative bg-black text-white py-20 px-6 overflow-hidden">
-        <div className="max-w-6xl mx-auto text-center relative z-10">
-          <h2 className="text-4xl font-bold text-blue-400 mb-20">
+      {/* <section className="relative bg-black text-white py-20 px-6 overflow-hidden"> */}
+      {/* <div className="max-w-6xl mx-auto text-center relative z-10"> */}
+      {/* <h2 className="text-4xl font-bold text-blue-400 mb-20">
             Why Creditas?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-14 mt-12">
-            <div className="flex flex-col items-center text-center px-4">
-              <div className="bg-green-600 p-4 rounded-full mb-4">
+          </h2> */}
+      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-14 mt-12"> */}
+      {/* <div className="flex flex-col items-center text-center px-4"> */}
+      {/* <div className="bg-green-600 p-4 rounded-full mb-4">
                 <CheckCircleIcon className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-300">TRANSPARENCY</h3>
-              <p className="text-gray-400 mt-2 text-sm max-w-xs">
+              </div> */}
+      {/* <h3 className="text-xl font-bold text-gray-300">TRANSPARENCY</h3> */}
+      {/* <p className="text-gray-400 mt-2 text-sm max-w-xs">
                 Unparalleled work ethic and strict information security
                 standards. Partnering with us safeguards and enhances our
                 clients' brand.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center px-4">
-              <div className="bg-blue-600 p-4 rounded-full mb-4">
+              </p> */}
+      {/* </div> */}
+      {/* <div className="flex flex-col items-center text-center px-4"> */}
+      {/* <div className="bg-blue-600 p-4 rounded-full mb-4">
                 <ChartBarIcon className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-300">AGILITY</h3>
-              <p className="text-gray-400 mt-2 text-sm max-w-xs">
+              </div> */}
+      {/* <h3 className="text-xl font-bold text-gray-300">AGILITY</h3> */}
+      {/* <p className="text-gray-400 mt-2 text-sm max-w-xs">
                 We move at blazing fast speeds and tackle new challenges with
                 zero friction - helping you translate your ideas into business
                 quickly.
-              </p>
-            </div>
-            <div className="flex flex-col items-center text-center px-4">
-              <div className="bg-blue-500 p-4 rounded-full mb-4">
+              </p> */}
+      {/* </div> */}
+      {/* <div className="flex flex-col items-center text-center px-4"> */}
+      {/* <div className="bg-blue-500 p-4 rounded-full mb-4">
                 <MdMemory className="h-8 w-8 text-white" />
-              </div>
-              <h3 className="text-xl font-bold text-gray-300">FUTURISM</h3>
-              <p className="text-gray-400 mt-2 text-sm max-w-xs">
+              </div> */}
+      {/* <h3 className="text-xl font-bold text-gray-300">FUTURISM</h3> */}
+      {/* <p className="text-gray-400 mt-2 text-sm max-w-xs">
                 Helping our clients build the digital institutions of tomorrow
                 by deploying complex and cutting-edge tech in a utilisable
                 fashion.
-              </p>
-            </div>
-          </div>
-        </div>
+              </p> */}
+      {/* </div> */}
+      {/* </div> */}
+      {/* </div> */}
 
-        <svg
+      {/* <svg
           className="absolute w-full top-40 left-0 h-44 pointer-events-none z-0"
           viewBox="0 0 1440 320"
           preserveAspectRatio="none"
@@ -213,19 +211,19 @@ export default function OurStory() {
             strokeLinejoin="round"
             filter="url(#glow)"
           />
-        </svg>
-      </section>
+        </svg> */}
+      {/* </section> */}
 
       {/* Meet Our Team Section */}
       <section className="relative bg-black py-32 text-white">
         <h2 className="text-4xl font-bold text-center text-sky-400 mb-6">
-          Meet Our Team
+          Lorem, ipsum dolor.
         </h2>
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mb-20">
-          We are a team of the best and brightest, driven by a desire and hunger
-          to affect the course of modern Finance. Together, we work hard, mentor
-          and nudge each other towards betterment, and even enjoy a peaceful
-          reprieve, when it presents itself!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+          corporis quibusdam officia maxime eos dolor nemo quas error eaque
+          temporibus velit, cupiditate modi necessitatibus repudiandae quasi.
+          Officiis earum amet facilis.
         </p>
 
         <div className="relative w-full h-[100vh] max-w-7xl mx-auto">

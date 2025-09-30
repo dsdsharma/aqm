@@ -1,4 +1,4 @@
-import demoImage from "../Images/heroimage.png";
+import demoImage from "../Images/herolanding.png";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
 import tpeImg from "../Images/tpe.png";
