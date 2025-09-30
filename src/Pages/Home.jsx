@@ -79,7 +79,6 @@ export default function Home() {
         </div>{" "}
       </div>
       <div className="mt-10">
-        {/* <h3 className="font-semibold text-lg">Media Mentions</h3> */}
         <div className="mt-4 w-full">
           <Slider {...settings}>
             <div>
@@ -134,7 +133,7 @@ export default function Home() {
         <div className="w-full text-center mb-16">
           <h1 className="text-3xl md:text-4xl font-bold  text-green-500">
             Lorem ipsum dolor sit amet consectetur adipisicing. <br />
-            Lorem ipsum dolor sit.
+            Lorem ipsum dolor sit amet.
           </h1>
         </div>
 
