@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../Images/aboutus.jpg"; // adjust the path as needed
+import bgImage from "../Images/aboutus.png"; // adjust the path as needed
 
 export default function HeroSection() {
   return (
