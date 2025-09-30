@@ -131,7 +131,10 @@ export default function Home() {
       <div className="bg-black text-white py-20">
         {/* Section Heading */}
         <div className="w-full text-center mb-16">
-          <h1 className="text-3xl md:text-4xl font-bold  text-green-500">
+          <h1
+            className="text-3xl md:text-4xl font-bold"
+            style={{ color: "#d8b9ff" }}
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing. <br />
             Lorem ipsum dolor sit amet.
           </h1>
@@ -153,9 +156,10 @@ export default function Home() {
             <h2 className="text-3xl md:text-4xl font-bold">
               Lorem ipsum dolor sit.
             </h2>
-            <p className="text-xl  text-green-500 font-medium">
+            <p className="text-xl font-medium" style={{ color: "#d8b9ff" }}>
               Lorem ipsum dolor sit.
             </p>
+
             <p className="text-gray-300 leading-relaxed">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem
               nam quia aut sed in incidunt voluptatum ipsum quis, similique
@@ -191,9 +195,14 @@ export default function Home() {
 
         {/* Content on top of video */}
         <div className="relative z-10 max-w-xl px-6">
-          <p className="text-3xl  text-green-500 mb-4">Lorem, ipsum.</p>
+          <p className="text-3xl mb-4" style={{ color: "#d8b9ff" }}>
+            Lorem, ipsum.
+          </p>
 
-          <h1 className="text-3xl md:text-5xl font-bold  text-green-500 mb-6 leading-tight">
+          <h1
+            className="text-3xl md:text-5xl font-bold mb-6 leading-tight"
+            style={{ color: "#d8b9ff" }}
+          >
             Lorem ipsum dolor sit. <br />
             Lorem ipsum dolor sit, amet consectetur adipisicing.
           </h1>
@@ -215,7 +224,7 @@ export default function Home() {
         </div>
       </section>
 
-      <h1 className="text-4xl  text-green-500 mb-4 text-center">
+      <h1 className="text-4xl mb-4 text-center" style={{ color: "#d8b9ff" }}>
         Lorem ipsum dolor sit amet consectetur.
       </h1>
 
@@ -224,7 +233,10 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="md:w-1/2 px-6 md:pl-16">
-            <h2 className="text-4xl md:text-5xl font-bold  text-green-500 leading-snug mb-6">
+            <h2
+              className="text-4xl md:text-5xl font-bold leading-snug mb-6"
+              style={{ color: "#d8b9ff" }}
+            >
               Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
             </h2>
 
@@ -259,9 +271,13 @@ export default function Home() {
       {/* ✅ Partnerships Section */}
       <section className="bg-black text-white py-20 px-6 text-center">
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold  text-green-500">
+        <h2
+          className="text-3xl md:text-4xl font-bold"
+          style={{ color: "#d8b9ff" }}
+        >
           Lorem ipsum dolor sit amet.
         </h2>
+
         <p className="text-gray-300 mt-4 text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing. <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sed.
