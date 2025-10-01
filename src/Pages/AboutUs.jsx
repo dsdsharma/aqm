@@ -1,7 +1,13 @@
 import React from "react";
 import bgImage from "../Images/aboutus.png"; // adjust the path as needed
+import { useEffect, useState } from "react";
 
 export default function HeroSection() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   return (
     <section
       className="relative w-full min-h-screen bg-cover bg-center flex items-center justify-center text-white px-6"
@@ -52,6 +58,25 @@ export default function HeroSection() {
             alt="Nowcom"
             className="h-8 invert"
           />
+        </div>
+
+        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {[
+            ["2015", "Founding year"],
+            ["460+", "Team members"],
+            ["20+", "Clients"],
+            ["30M+", "Customers"],
+          ].map(([title, subtitle], i) => (
+            <div
+              key={title}
+              className={`transition-opacity duration-2000 delay-${
+                1100 + i * 200
+              } ${loaded ? "opacity-100" : "opacity-0"}`}
+            >
+              <h2 className="text-2xl font-bold">{title}</h2>
+              <p className="text-gray-400">{subtitle}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>

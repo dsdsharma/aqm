@@ -114,7 +114,7 @@ export default function OurStory() {
         </div>
 
         {/* Stats */}
-        <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {[
             ["2015", "Founding year"],
             ["460+", "Team members"],
@@ -131,7 +131,7 @@ export default function OurStory() {
               <p className="text-gray-400">{subtitle}</p>
             </div>
           ))}
-        </div>
+        </div> */}
       </section>
 
       {/* Why Creditas */}

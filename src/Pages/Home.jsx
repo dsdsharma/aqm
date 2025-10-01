@@ -37,8 +37,15 @@ import citi from "../Images/citi.jpg";
 import cibil from "../Images/cibil.jpg";
 import indus from "../Images/indus.jpg";
 import Footer from "../Pages/Footer";
+import { useState } from "react";
+import { useEffect } from "react";
 
 export default function Home() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    setLoaded(true);
+  }, []);
+
   const settings = {
     dots: false, // remove dots if you want a clean scroll
     infinite: true,
@@ -177,6 +184,26 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Stats */}
+      <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        {[
+          ["2015", "Founding year"],
+          ["460+", "Team members"],
+          ["20+", "Clients"],
+          ["30M+", "Customers"],
+        ].map(([title, subtitle], i) => (
+          <div
+            key={title}
+            className={`transition-opacity duration-2000 delay-${
+              1100 + i * 200
+            } ${loaded ? "opacity-100" : "opacity-0"}`}
+          >
+            <h2 className="text-2xl font-bold">{title}</h2>
+            <p className="text-gray-400">{subtitle}</p>
+          </div>
+        ))}
+      </div>
+
       {/* Unrivaled Technology Section with Video Background */}
       <section className="relative bg-black text-white py-28 flex items-center justify-center text-center overflow-hidden">
         {/* Background Video */}
@@ -191,7 +218,7 @@ export default function Home() {
         />
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-black/40 rounded-xl m-auto w-[500px] h-[600px]"></div>
+        <div className="absolute inset-0 bg-black/40 rounded-xl m-auto w-[550px] h-[650px]"></div>
 
         {/* Content on top of video */}
         <div className="relative z-10 max-w-xl px-6">

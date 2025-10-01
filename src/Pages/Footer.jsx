@@ -1,6 +1,7 @@
 // src/components/Footer.jsx
+import { NavLink } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
-import earthImg from "../Images/earth.jpg"; // <- add your earth image in assets folder
+import earthImg from "../Images/earth.jpg";
 
 export default function Footer() {
   return (
@@ -11,13 +12,11 @@ export default function Footer() {
         alt="earth"
         className="absolute top-10 left-20 w-40 opacity-40 pointer-events-none"
       />
-  <img
-  src={earthImg}
-  alt="earth"
-  className="absolute bottom-[-10px] right-40 w-40 opacity-50 pointer-events-none"
-/>
-
-
+      <img
+        src={earthImg}
+        alt="earth"
+        className="absolute bottom-[-10px] right-40 w-40 opacity-50 pointer-events-none"
+      />
       <img
         src={earthImg}
         alt="earth"
@@ -26,7 +25,6 @@ export default function Footer() {
 
       {/* Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        
         {/* Left - Logo + Copyright */}
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-3xl font-bold">
@@ -38,15 +36,26 @@ export default function Footer() {
           </p>
         </div>
 
-        {/* Middle - Links */}
+        {/* Middle - Links (using NavLink like navbar) */}
         <div className="flex flex-wrap justify-center gap-6 text-sm">
-          <a href="#" className="hover:text-sky-400">Inclusion</a>
-          <a href="#" className="hover:text-sky-400">DPA</a>
-          <a href="#" className="hover:text-sky-400">Privacy Policy</a>
-          <a href="#" className="hover:text-sky-400">Terms of Use</a>
-          <a href="#" className="hover:text-sky-400">Acceptable Use Policy</a>
-          <a href="#" className="hover:text-sky-400">Cookie Policy</a>
-          <a href="#" className="hover:text-sky-400">Contact Us</a>
+          <NavLink to="/" className="hover:text-sky-400">
+            Home
+          </NavLink>
+          <NavLink to="/services" className="hover:text-sky-400">
+            Services
+          </NavLink>
+          <NavLink to="/Caascloud" className="hover:text-sky-400">
+            CaaS Cloud
+          </NavLink>
+          {/* <NavLink to="/industries" className="hover:text-sky-400">
+            Industries
+          </NavLink> */}
+          <NavLink to="/aboutus" className="hover:text-sky-400">
+            About Us
+          </NavLink>
+          <NavLink to="/contact" className="hover:text-sky-400">
+            Contact
+          </NavLink>
         </div>
 
         {/* Right - Contact */}

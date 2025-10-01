@@ -1,39 +1,72 @@
-import { useState } from "react";
-import { Link } from "react-router-dom"; // ✅ import Link
+import { NavLink } from "react-router-dom"; // ✅ use NavLink instead of Link
 import logoAqm from "../Images/aqm.png";
 
 export default function Navbar() {
-  const [isProductsOpen, setIsProductsOpen] = useState(false);
-
   return (
     <div>
       <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md text-white px-8 py-4 flex items-center justify-between shadow-md">
         {/* Logo */}
         <div className="flex items-center space-x-2 h-0 overflow-visible">
-          <Link to="/">
+          <NavLink to="/">
             <img src={logoAqm} alt="AQM Logo" className="h-[90px] w-auto" />
-          </Link>
+          </NavLink>
         </div>
 
         {/* Menu Items */}
         <div className="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <Link to="/services" className="hover:text-cyan-400 transition">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
+            }
+          >
+            Home
+          </NavLink>
+
+          <NavLink
+            to="/services"
+            className={({ isActive }) =>
+              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
+            }
+          >
             Services
-          </Link>
+          </NavLink>
 
-          <Link to="/Caascloud" className="hover:text-cyan-400 transition">
+          <NavLink
+            to="/Caascloud"
+            className={({ isActive }) =>
+              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
+            }
+          >
             CaaS Cloud
-          </Link>
+          </NavLink>
 
-          <Link to="/industries" className="hover:text-cyan-400 transition">
+          {/* <NavLink
+            to="/industries"
+            className={({ isActive }) =>
+              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
+            }
+          >
             Industries
-          </Link>
-          <Link to="/aboutus" className="hover:text-cyan-400 transition">
+          </NavLink> */}
+
+          <NavLink
+            to="/aboutus"
+            className={({ isActive }) =>
+              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
+            }
+          >
             About Us
-          </Link>
-          <Link to="/contact" className="hover:text-cyan-400 transition">
+          </NavLink>
+
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
+            }
+          >
             Contact
-          </Link>
+          </NavLink>
         </div>
 
         {/* Request a Demo Button */}
