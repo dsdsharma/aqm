@@ -258,7 +258,7 @@ export default function OurStory() {
           Officiis earum amet facilis.
         </p>
 
-        <div className="relative w-[75%] h-[100vh] mx-auto rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl">
           <img
             src={teamImg}
             alt="Our Story"
