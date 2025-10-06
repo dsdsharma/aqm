@@ -1,6 +1,6 @@
 // src/components/NeoCollections.jsx
 import React from "react";
-import ethvideo from "../Images/ethvideo.mp4";
+import ethvideo from "../Images/caasvideo.mp4";
 import ethvideo1 from "../Images/ethvideo1.mp4";
 import ethvideo2 from "../Images/ethvideo2.mp4";
 import ethvideo3 from "../Images/ethvideo3.mp4";

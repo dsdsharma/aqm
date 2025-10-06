@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
+import teamImg from "../Images/services.gif";
 
 // import teamImg from "../Images/ourstory.jpg";
 
@@ -256,6 +257,16 @@ export default function OurStory() {
           temporibus velit, cupiditate modi necessitatibus repudiandae quasi.
           Officiis earum amet facilis.
         </p>
+
+        <div className="relative w-full h-[100vh]">
+          <img
+            src={teamImg}
+            alt="Our Story"
+            className={`w-full h-full object-cover brightness-90 transition-opacity duration-1000 ${
+              loaded ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        </div>
 
         <div className="relative w-full h-[100vh] max-w-7xl mx-auto">
           {bubbles.map((bubble, idx) => (

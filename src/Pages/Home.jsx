@@ -234,7 +234,7 @@ export default function Home() {
             <img
               src={mobile}
               alt="Vision"
-              className="rounded-lg shadow-lg relative z-10"
+              className="w-[600px] max-w-full rounded-lg shadow-lg relative z-10"
             />
 
             {/* Lighter Overlay */}
