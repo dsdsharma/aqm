@@ -139,7 +139,7 @@ export default function Home() {
         {/* Section Heading */}
         <div className="w-full text-center mb-16">
           <h1
-            className="text-3xl md:text-4xl font-bold"
+            className="text-3xl md:text-4xl font-bold mt-10"
             style={{ color: "#d8b9ff" }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing. <br />
