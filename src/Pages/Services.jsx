@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
-import teamImg from "../Images/services.gif";
+import teamImg from "../Images/servicestrans.gif";
 
 // import teamImg from "../Images/ourstory.jpg";
 
@@ -258,7 +258,7 @@ export default function OurStory() {
           Officiis earum amet facilis.
         </p>
 
-        <div className="relative w-full h-[100vh]">
+        <div className="relative w-[75%] h-[100vh] mx-auto rounded-2xl overflow-hidden shadow-xl">
           <img
             src={teamImg}
             alt="Our Story"
