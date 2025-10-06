@@ -2,6 +2,7 @@
 import { NavLink } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import earthImg from "../Images/earth.jpg";
+import logoAqm from "../Images/aqm.png";
 
 export default function Footer() {
   return (
@@ -27,12 +28,14 @@ export default function Footer() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
         {/* Left - Logo + Copyright */}
         <div className="flex flex-col items-center md:items-start">
-          <h1 className="text-3xl font-bold">
+          {/* <h1 className="text-3xl font-bold">
             <span className="text-white">CRED</span>
             <span className="text-sky-500">ITAS</span>
-          </h1>
+          </h1> */}
+          <img src={logoAqm} alt="AQM Logo" className="h-[90px] w-auto" />
+
           <p className="text-gray-400 mt-2 text-sm">
-            © Creditas Solutions Pvt. Ltd.
+            © aqm Solutions Pvt. Ltd.
           </p>
         </div>
 
@@ -60,7 +63,7 @@ export default function Footer() {
 
         {/* Right - Contact */}
         <div className="flex flex-col items-center md:items-end gap-2">
-          <p className="text-gray-300 text-sm">info@creditas.in</p>
+          <p className="text-gray-300 text-sm">info@aqm.in</p>
           <a href="#" className="text-gray-300 hover:text-sky-400">
             <FaLinkedin size={28} />
           </a>

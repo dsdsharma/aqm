@@ -22,9 +22,9 @@ import Slider from "react-slick";
 import { ArrowRight } from "lucide-react"; // ✅ Added import
 import "slick-carousel/slick/slick.css"; // ✅ Needed for react-slick
 import "slick-carousel/slick/slick-theme.css";
-import mobImg from "../Images/lpimage.png"; // ✅ import image
+import india from "../Images/india.png"; // ✅ import image
 import techVideo from "../Images/techno.mp4"; // ✅ background video
-import personImg from "../Images/homeBanner.jpg"; // ✅ new image (replace with yours)
+import mobile from "../Images/mobile.gif"; // ✅ new image (replace with yours)
 
 // ✅ Partnership Logos
 import icici from "../Images/icici.jpg";
@@ -152,9 +152,9 @@ export default function Home() {
           {/* Left - Mobile Mockup */}
           <div className="flex-1 flex justify-center">
             <img
-              src={mobImg}
+              src={india}
               alt="Digital Banking App"
-              className="w-[180px] md:w-[220px] drop-shadow-2xl"
+              className="h-[300px] md:h-[400px] drop-shadow-2xl"
             />
           </div>
 
@@ -185,7 +185,7 @@ export default function Home() {
       </div>
 
       {/* Stats */}
-      <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
         {[
           ["2015", "Founding year"],
           ["460+", "Team members"],
@@ -204,8 +204,47 @@ export default function Home() {
         ))}
       </div>
 
+      <section className="relative bg-black text-white py-20">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Left Content */}
+          <div className="md:w-1/2 px-6 md:pl-16">
+            <h2
+              className="text-4xl md:text-5xl font-bold leading-snug mb-6"
+              style={{ color: "#d8b9ff" }}
+            >
+              Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
+            </h2>
+
+            <p className="text-lg text-gray-300 mb-8">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
+              Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
+              Lorem ipsum dolor sit amet consectetur.
+            </p>
+
+            <a
+              href="#"
+              className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
+            >
+              Know More <ArrowRight size={18} />
+            </a>
+          </div>
+
+          {/* Right Image */}
+          <div className="relative md:w-1/2 flex justify-center">
+            <img
+              src={mobile}
+              alt="Vision"
+              className="rounded-lg shadow-lg relative z-10"
+            />
+
+            {/* Lighter Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-black/20 to-transparent rounded-b-xl z-20"></div>
+          </div>
+        </div>
+      </section>
+
       {/* Unrivaled Technology Section with Video Background */}
-      <section className="relative bg-black text-white py-28 flex items-center justify-center text-center overflow-hidden">
+      <section className="relative bg-black text-white py-28 flex items-center justify-center text-center overflow-hidden mt-16 ">
         {/* Background Video */}
         <video
           src={indiaMap}
@@ -254,46 +293,6 @@ export default function Home() {
       <h1 className="text-4xl mb-4 text-center" style={{ color: "#d8b9ff" }}>
         Lorem ipsum dolor sit amet consectetur.
       </h1>
-
-      {/* Vision Section */}
-      <section className="relative bg-black text-white py-20">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
-          {/* Left Content */}
-          <div className="md:w-1/2 px-6 md:pl-16">
-            <h2
-              className="text-4xl md:text-5xl font-bold leading-snug mb-6"
-              style={{ color: "#d8b9ff" }}
-            >
-              Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
-            </h2>
-
-            <p className="text-lg text-gray-300 mb-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
-              Lorem ipsum dolor sit amet consectetur.
-            </p>
-
-            <a
-              href="#"
-              className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
-            >
-              Know More <ArrowRight size={18} />
-            </a>
-          </div>
-
-          {/* Right Image */}
-          <div className="relative md:w-1/2 flex justify-center">
-            <img
-              src={personImg}
-              alt="Vision"
-              className="rounded-lg shadow-lg relative z-10"
-            />
-
-            {/* Lighter Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-black/20 to-transparent rounded-b-xl z-20"></div>
-          </div>
-        </div>
-      </section>
 
       {/* ✅ Partnerships Section */}
       <section className="bg-black text-white py-20 px-6 text-center">

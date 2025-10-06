@@ -5,12 +5,12 @@ import { MdMemory } from "react-icons/md";
 // import teamImg from "../Images/ourstory.jpg";
 
 // Replace these with actual image paths
-import person1 from "../Images/person1.jpg";
-import person2 from "../Images/person2.jpg";
-import person3 from "../Images/person3.jpg";
-import person4 from "../Images/person4.jpg";
-import person5 from "../Images/person5.jpg";
-import person6 from "../Images/person6.jpg";
+// import person1 from "../Images/person1.jpg";
+// import person2 from "../Images/person2.jpg";
+// import person3 from "../Images/person3.jpg";
+// import person4 from "../Images/person4.jpg";
+// import person5 from "../Images/person5.jpg";
+// import person6 from "../Images/person6.jpg";
 
 import Footer from "./Footer";
 
@@ -24,45 +24,76 @@ export default function OurStory() {
   const bubbles = [
     {
       type: "label",
-      text: "Founders",
-      color: "bg-purple-400",
+      text: "Services1",
+      color: "bg-red-800",
       x: "left-[10%]",
       y: "top-[45%]",
     },
-    { type: "image", src: person1, x: "left-[30%]", y: "top-[15%]" },
-    { type: "image", src: person2, x: "left-[45%]", y: "top-[25%]" },
+
     {
       type: "label",
-      text: "Sales",
+      text: "Services2",
+      color: "bg-purple-400",
+      x: "left-[45%]",
+      y: "top-[25%]",
+    },
+
+    {
+      type: "label",
+      text: "Services3",
       color: "bg-red-500",
       x: "right-[10%]",
       y: "top-[35%]",
     },
-    { type: "image", src: person3, x: "left-[20%]", y: "top-[65%]" },
     {
       type: "label",
-      text: "Operations",
+      text: "Services4",
+      color: "bg-purple-400",
+      x: "left-[20%]",
+      y: "top-[65%]",
+    },
+    {
+      type: "label",
+      text: "Services5",
       color: "bg-pink-300",
       x: "left-[35%]",
       y: "top-[60%]",
     },
     {
       type: "label",
-      text: "Product & Technology",
+      text: "Services6",
       color: "bg-green-400",
       x: "left-[40%]",
       y: "top-[80%]",
     },
-    { type: "image", src: person4, x: "left-[50%]", y: "top-[70%]" },
     {
       type: "label",
-      text: "Marketing",
-      color: "bg-cyan-500",
+      text: "Services7",
+      color: "bg-purple-400",
+      x: "left-[50%]",
+      y: "top-[70%]",
+    },
+    {
+      type: "label",
+      text: "Services8",
+      color: "bg-green-500",
       x: "right-[28%]",
       y: "top-[65%]",
     },
-    { type: "image", src: person5, x: "right-[15%]", y: "top-[50%]" },
-    { type: "image", src: person6, x: "right-[24%]", y: "top-[82%]" },
+    {
+      type: "label",
+      text: "Services9",
+      color: "bg-red-400",
+      x: "right-[15%]",
+      y: "top-[50%]",
+    },
+    {
+      type: "label",
+      text: "Services10",
+      color: "bg-yellow-400",
+      x: "right-[24%]",
+      y: "top-[82%]",
+    },
   ];
 
   return (
@@ -227,23 +258,22 @@ export default function OurStory() {
         </p>
 
         <div className="relative w-full h-[100vh] max-w-7xl mx-auto">
-          {bubbles.map((bubble, idx) =>
-            bubble.type === "image" ? (
-              <img
-                key={idx}
-                src={bubble.src}
-                alt="team member"
-                className={`absolute ${bubble.x} ${bubble.y} w-28 h-28 md:w-36 md:h-36 rounded-full object-cover shadow-lg border-2 border-white`}
-              />
-            ) : (
-              <div
-                key={idx}
-                className={`absolute ${bubble.x} ${bubble.y} w-24 h-24 md:w-28 md:h-28 flex items-center justify-center rounded-full ${bubble.color} text-white font-semibold text-center text-sm px-2 shadow-xl`}
-              >
-                {bubble.text}
-              </div>
-            )
-          )}
+          {bubbles.map((bubble, idx) => (
+            // bubble.type === "image" ? (
+            //   <img
+            //     key={idx}
+            //     src={bubble.src}
+            //     alt="team member"
+            //     className={`absolute ${bubble.x} ${bubble.y} w-28 h-28 md:w-36 md:h-36 rounded-full object-cover shadow-lg border-2 border-white`}
+            //   />
+            // ) :
+            <div
+              key={idx}
+              className={`absolute ${bubble.x} ${bubble.y} w-24 h-24 md:w-28 md:h-28 flex items-center justify-center rounded-full ${bubble.color} text-white font-semibold text-center text-sm px-2 shadow-xl`}
+            >
+              {bubble.text}
+            </div>
+          ))}
         </div>
       </section>
       <Footer />

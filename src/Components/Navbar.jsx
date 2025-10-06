@@ -1,4 +1,6 @@
-import { NavLink } from "react-router-dom"; // ✅ use NavLink instead of Link
+// Navbar.jsx
+import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import logoAqm from "../Images/aqm.png";
 
 export default function Navbar() {
@@ -41,15 +43,6 @@ export default function Navbar() {
             CaaS Cloud
           </NavLink>
 
-          {/* <NavLink
-            to="/industries"
-            className={({ isActive }) =>
-              isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
-            }
-          >
-            Industries
-          </NavLink> */}
-
           <NavLink
             to="/aboutus"
             className={({ isActive }) =>
@@ -70,10 +63,14 @@ export default function Navbar() {
         </div>
 
         {/* Request a Demo Button */}
-        <button className="ml-6 px-4 py-2 rounded-xl text-black font-medium bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition">
+        <NavLink
+          to="/contact"
+          className="ml-6 px-4 py-2 rounded-xl text-black font-medium bg-gradient-to-r from-sky-400 to-purple-300 hover:opacity-90 transition"
+        >
           Request a Demo ▶
-        </button>
+        </NavLink>
       </nav>
+
       <div className="mt-[70px]"></div>
     </div>
   );
