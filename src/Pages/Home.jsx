@@ -61,7 +61,7 @@ export default function Home() {
   };
 
   return (
-    // style={{ backgroundImage: `url(${demoImage})` }}
+    // style={{ backgroundImage: url(${demoImage}) }}
 
     <section className="bg-black text-white">
       {/* Hero Section */}
@@ -69,7 +69,7 @@ export default function Home() {
       <img src={demoImage}></img>
       <div
       //className="flex w-full items-center h-[800px] px-4 bg-cover bg-center"
-      //style={{ backgroundImage: `url(${demoImage})` }}
+      //style={{ backgroundImage: url(${demoImage}) }}
       >
         {/* Left Side (optional image/video was here, removed) */}
         <div className="w-[40%] flex items-center">
