@@ -247,7 +247,7 @@ export default function OurStory() {
       {/* </section> */}
 
       {/* Meet Our Team Section */}
-      <section className="relative bg-black py-32 text-white">
+      <section className="relative bg-black py-12 text-white  ">
         <h2 className="text-4xl font-bold text-center text-sky-400 mb-6">
           Lorem, ipsum dolor.
         </h2>
@@ -258,7 +258,7 @@ export default function OurStory() {
           Officiis earum amet facilis.
         </p>
 
-        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative w-[50%] h-[50%] ml-[10%] rounded-2xl overflow-hidden shadow-xl">
           <img
             src={teamImg}
             alt="Our Story"

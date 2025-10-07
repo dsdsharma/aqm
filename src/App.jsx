@@ -6,6 +6,7 @@ import Industries from "./Pages/Indutries";
 import AboutUs from "./Pages/AboutUs";
 import Contact from "./Pages/Contact";
 import CaaSCloud from "./Pages/CaaSCloud";
+// import ConatctModal from "./Components/ContactModal";
 
 function App() {
   return (

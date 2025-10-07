@@ -22,13 +22,12 @@ export default function ContactPage() {
           <div className="text-gray-300 space-y-1">
             <p>
               General Queries -{" "}
-              <span className="text-cyan-400">+91-9818503541</span>
+              <span className="text-cyan-400">+888888888888</span>
             </p>
             <p>
-              UK Queries -{" "}
-              <span className="text-cyan-400">+44 7956 551590</span>
+              UK Queries - <span className="text-cyan-400">+99999999999</span>
             </p>
-            <p>info@creditas.in</p>
+            <p>info@aqmedge.com</p>
             <p>Plot No 63, Huda Colony, Sector 44, Gurugram, Haryana 122003</p>
           </div>
 
@@ -108,7 +107,7 @@ export default function ContactPage() {
               type="submit"
               className="w-full py-2 rounded bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-semibold hover:opacity-90 transition"
             >
-              Submit ▶
+              Submit
             </button>
           </form>
         </div>

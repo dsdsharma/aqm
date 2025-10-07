@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import demoImage from "../Images/herolanding.png";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
@@ -174,12 +176,12 @@ export default function Home() {
               aliquam recusandae officiis magni adipisci.
             </p>
 
-            <a
-              href="#"
+            <Link
+              to="/services"
               className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
             >
               Know More <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -221,12 +223,12 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur.
             </p>
 
-            <a
-              href="#"
+            <Link
+              to="/services"
               className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
             >
               Know More <ArrowRight size={18} />
-            </a>
+            </Link>
           </div>
 
           {/* Right Image */}
@@ -261,38 +263,35 @@ export default function Home() {
 
         {/* Content on top of video */}
         <div className="relative z-10 max-w-xl px-6">
-          <p className="text-3xl mb-4" style={{ color: "#d8b9ff" }}>
+          {/* <p className="text-3xl mb-4" style={{ color: "#d8b9ff" }}>
             Lorem, ipsum.
-          </p>
+          </p> */}
 
           <h1
-            className="text-3xl md:text-5xl font-bold mb-6 leading-tight"
-            style={{ color: "#d8b9ff" }}
+            className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-white"
+            // style={{ color: "#d8b9ff" }}
           >
-            Lorem ipsum dolor sit. <br />
-            Lorem ipsum dolor sit, amet consectetur adipisicing.
+            Helping build a financially <br />
+            healthy India!
           </h1>
 
-          <p className="text-lg text-gray-100 mb-8">
+          <p className="text-lg text-white mb-8">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
             Lorem ipsum dolor sit amet consectetur adipisicing. <br />
-            Lorem ipsum dolor sit amet consectetur. <br />
-            Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
-            Lorem, ipsum dolor.
           </p>
 
-          <a
-            href="#"
+          <Link
+            to="/services"
             className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
           >
             Know More <ArrowRight size={18} />
-          </a>
+          </Link>
         </div>
       </section>
-
+      {/* 
       <h1 className="text-4xl mb-4 text-center" style={{ color: "#d8b9ff" }}>
         Lorem ipsum dolor sit amet consectetur.
-      </h1>
+      </h1> */}
 
       {/* ✅ Partnerships Section */}
       <section className="bg-black text-white py-20 px-6 text-center">
