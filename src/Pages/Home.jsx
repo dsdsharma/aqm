@@ -87,7 +87,7 @@ export default function Home() {
           </div>
         </div>{" "}
       </div>
-      <div className="mt-10">
+      <div className="mt-20">
         <div className="mt-4 w-full">
           <Slider {...settings}>
             <div>
@@ -135,13 +135,12 @@ export default function Home() {
           </Slider>
         </div>
       </div>
-
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         {/* Section Heading */}
         <div className="w-full text-center mb-16">
           <h1
-            className="text-3xl md:text-4xl font-bold mt-10"
+            className="text-3xl md:text-4xl px-2 font-bold mt-20"
             style={{ color: "#d8b9ff" }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing. <br />
@@ -169,7 +168,7 @@ export default function Home() {
               Lorem ipsum dolor sit.
             </p>
 
-            <p className="text-gray-300 leading-relaxed">
+            <p className="text-gray-300 leading-relaxed px-2">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem
               nam quia aut sed in incidunt voluptatum ipsum quis, similique
               laboriosam, provident vero cum expedita eum consequuntur dolor
@@ -185,9 +184,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {/* Stats */}
-      <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div className="mt-16 grid grid-cols-2 md:grid-cols-4 text-center">
         {[
           ["2015", "Founding year"],
           ["460+", "Team members"],
@@ -205,13 +203,12 @@ export default function Home() {
           </div>
         ))}
       </div>
-
       <section className="relative bg-black text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
           {/* Left Content */}
           <div className="md:w-1/2 px-6 md:pl-16">
             <h2
-              className="text-4xl md:text-5xl font-bold leading-snug mb-6"
+              className="text-3xl md:text-5xl font-bold leading-snug mb-6"
               style={{ color: "#d8b9ff" }}
             >
               Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
@@ -236,16 +233,12 @@ export default function Home() {
             <img
               src={mobile}
               alt="Vision"
-              className="w-[600px] max-w-full rounded-lg shadow-lg relative z-10"
+              className="w-[600px] max-w-full object-contain"
             />
-
-            {/* Lighter Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-l from-black/30 via-black/20 to-transparent rounded-b-xl z-20"></div>
           </div>
         </div>
       </section>
-
-      {/* Unrivaled Technology Section with Video Background */}
+      s{/* Unrivaled Technology Section with Video Background */}
       <section className="relative bg-black text-white py-28 flex items-center justify-center text-center overflow-hidden mt-16 ">
         {/* Background Video */}
         <video
@@ -292,7 +285,6 @@ export default function Home() {
       <h1 className="text-4xl mb-4 text-center" style={{ color: "#d8b9ff" }}>
         Lorem ipsum dolor sit amet consectetur.
       </h1> */}
-
       {/* ✅ Partnerships Section */}
       <section className="bg-black text-white py-20 px-6 text-center">
         {/* Heading */}
@@ -309,7 +301,7 @@ export default function Home() {
         </p>
 
         {/* Logos */}
-        <div className="mt-16 max-w-7xl mx-auto px-6">
+        {/* <div className="mt-16 max-w-7xl mx-auto px-6">
           <Slider
             dots={false}
             infinite={true}
@@ -394,16 +386,16 @@ export default function Home() {
               />
             </div>
           </Slider>
-        </div>
+        </div> */}
 
         {/* Footer Note */}
-        <p className="text-gray-400 mt-16 max-w-4xl mx-auto text-sm leading-relaxed">
+        {/* <p className="text-gray-400 mt-16 max-w-4xl mx-auto text-sm leading-relaxed">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
           doloremque soluta repudiandae quibusdam odio possimus iste nesciunt
           similique harum! Minus eos, sequi aut quos consectetur tempora
           explicabo corporis pariatur ut impedit! Iusto non saepe porro
           explicabo esse?
-        </p>
+        </p> */}
       </section>
       <Footer />
     </section>

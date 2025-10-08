@@ -16,19 +16,19 @@ export default function ContactPage() {
           <img src={logo} alt="aqm Logo" className="h-[100px] w-[100px] " />
 
           <h2 className="text-2xl font-semibold leading-snug">
-            Redefining Customer Engagement <br /> for the Digital Era
+            Reach us at <br />
           </h2>
 
           <div className="text-gray-300 space-y-1">
-            <p>
+            {/* <p>
               General Queries -{" "}
               <span className="text-cyan-400">+888888888888</span>
             </p>
             <p>
               UK Queries - <span className="text-cyan-400">+99999999999</span>
-            </p>
+            </p> */}
             <p>info@aqmedge.com</p>
-            <p>Plot No 63, Huda Colony, Sector 44, Gurugram, Haryana 122003</p>
+            <p>C-133-B, Sector 2, Noida - 201 301</p>
           </div>
 
           {/* Google Map Embed */}
@@ -84,7 +84,7 @@ export default function ContactPage() {
               ></textarea>
             </div>
 
-            <div className="flex items-start space-x-2">
+            {/* <div className="flex items-start space-x-2">
               <input
                 type="checkbox"
                 defaultChecked
@@ -101,11 +101,11 @@ export default function ContactPage() {
                 </a>
                 .
               </p>
-            </div>
+            </div> */}
 
             <button
               type="submit"
-              className="w-full py-2 rounded bg-gradient-to-r from-orange-500 to-yellow-400 text-black font-semibold hover:opacity-90 transition"
+              className="w-full py-2 rounded bg-gradient-to-r from-sky-400 to-purple-300 text-black font-semibold hover:opacity-90 transition"
             >
               Submit
             </button>

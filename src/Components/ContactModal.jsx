@@ -52,7 +52,7 @@ export default function ContactModal({ isOpen, onClose }) {
             />
           </div>
 
-          <div className="flex items-center space-x-2">
+          {/* <div className="flex items-center space-x-2">
             <input type="checkbox" />
             <span className="text-sm">
               I agree to the{" "}
@@ -65,11 +65,11 @@ export default function ContactModal({ isOpen, onClose }) {
               </a>
               .
             </span>
-          </div>
+          </div> */}
 
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-gradient-to-r from-orange-400 to-yellow-400 rounded font-semibold text-black hover:opacity-90 transition"
+            className="w-full py-2 px-4 bg-gradient-to-r  from-sky-400 to-purple-300 rounded font-semibold text-black hover:opacity-90 transition"
           >
             Submit
           </button>
