@@ -24,9 +24,9 @@ import Slider from "react-slick";
 import { ArrowRight } from "lucide-react"; // ✅ Added import
 import "slick-carousel/slick/slick.css"; // ✅ Needed for react-slick
 import "slick-carousel/slick/slick-theme.css";
-import india from "../Images/india.png"; // ✅ import image
+import india from "../Images/digital.gif"; // ✅ import image
 import techVideo from "../Images/techno.mp4"; // ✅ background video
-import mobile from "../Images/mobile.gif"; // ✅ new image (replace with yours)
+import mobile from "../Images/mobile1.png"; // ✅ new image (replace with yours)
 
 // ✅ Partnership Logos
 import icici from "../Images/icici.jpg";
