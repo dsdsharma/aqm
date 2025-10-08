@@ -2,17 +2,6 @@ import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
 import Services from "../Images/services.mp4";
-
-// import teamImg from "../Images/ourstory.jpg";
-
-// Replace these with actual image paths
-// import person1 from "../Images/person1.jpg";
-// import person2 from "../Images/person2.jpg";
-// import person3 from "../Images/person3.jpg";
-// import person4 from "../Images/person4.jpg";
-// import person5 from "../Images/person5.jpg";
-// import person6 from "../Images/person6.jpg";
-
 import Footer from "./Footer";
 
 export default function OurStory() {
@@ -20,6 +9,11 @@ export default function OurStory() {
 
   useEffect(() => {
     setLoaded(true);
+  }, []);
+
+  // ✅ Scroll to top when page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
   }, []);
 
   const bubbles = [
@@ -30,7 +24,6 @@ export default function OurStory() {
       x: "left-[10%]",
       y: "top-[45%]",
     },
-
     {
       type: "label",
       text: "Services2",
@@ -38,7 +31,6 @@ export default function OurStory() {
       x: "left-[45%]",
       y: "top-[25%]",
     },
-
     {
       type: "label",
       text: "Services3",
@@ -101,26 +93,7 @@ export default function OurStory() {
     <section className="relative w-full bg-black text-white">
       <div className="pt-24"></div>
 
-      {/* Hero Image */}
-      {/* <div className="relative">
-        <img
-          src={teamImg}
-          alt="Our Team"
-          className={`w-full h-screen object-cover brightness-125 transition-opacity duration-2000 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
-        <h2
-          className={`absolute top-10 w-full text-center text-6xl font-bold text-cyan-400 drop-shadow-lg transition-opacity duration-2000 delay-500 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          Our Story
-        </h2>
-      </div> */}
-
-      {/* Description */}
+      {/* Description Section */}
       <section className="bg-black text-white py-16 px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
           <div
@@ -132,6 +105,7 @@ export default function OurStory() {
               Lorem, ipsum dolor. <br /> Lorem ipsum dolor sit.
             </h1>
           </div>
+
           <div
             className={`md:w-1/2 transition-opacity duration-2000 delay-900 ${
               loaded ? "opacity-100" : "opacity-0"
@@ -144,110 +118,10 @@ export default function OurStory() {
             </p>
           </div>
         </div>
-
-        {/* Stats */}
-        {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-          {[
-            ["2015", "Founding year"],
-            ["460+", "Team members"],
-            ["20+", "Clients"],
-            ["30M+", "Customers"],
-          ].map(([title, subtitle], i) => (
-            <div
-              key={title}
-              className={`transition-opacity duration-2000 delay-${
-                1100 + i * 200
-              } ${loaded ? "opacity-100" : "opacity-0"}`}
-            >
-              <h2 className="text-2xl font-bold">{title}</h2>
-              <p className="text-gray-400">{subtitle}</p>
-            </div>
-          ))}
-        </div> */}
       </section>
 
-      {/* Why Creditas */}
-      {/* <section className="relative bg-black text-white py-20 px-6 overflow-hidden"> */}
-      {/* <div className="max-w-6xl mx-auto text-center relative z-10"> */}
-      {/* <h2 className="text-4xl font-bold text-blue-400 mb-20">
-            Why Creditas?
-          </h2> */}
-      {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-14 mt-12"> */}
-      {/* <div className="flex flex-col items-center text-center px-4"> */}
-      {/* <div className="bg-green-600 p-4 rounded-full mb-4">
-                <CheckCircleIcon className="h-8 w-8 text-white" />
-              </div> */}
-      {/* <h3 className="text-xl font-bold text-gray-300">TRANSPARENCY</h3> */}
-      {/* <p className="text-gray-400 mt-2 text-sm max-w-xs">
-                Unparalleled work ethic and strict information security
-                standards. Partnering with us safeguards and enhances our
-                clients' brand.
-              </p> */}
-      {/* </div> */}
-      {/* <div className="flex flex-col items-center text-center px-4"> */}
-      {/* <div className="bg-blue-600 p-4 rounded-full mb-4">
-                <ChartBarIcon className="h-8 w-8 text-white" />
-              </div> */}
-      {/* <h3 className="text-xl font-bold text-gray-300">AGILITY</h3> */}
-      {/* <p className="text-gray-400 mt-2 text-sm max-w-xs">
-                We move at blazing fast speeds and tackle new challenges with
-                zero friction - helping you translate your ideas into business
-                quickly.
-              </p> */}
-      {/* </div> */}
-      {/* <div className="flex flex-col items-center text-center px-4"> */}
-      {/* <div className="bg-blue-500 p-4 rounded-full mb-4">
-                <MdMemory className="h-8 w-8 text-white" />
-              </div> */}
-      {/* <h3 className="text-xl font-bold text-gray-300">FUTURISM</h3> */}
-      {/* <p className="text-gray-400 mt-2 text-sm max-w-xs">
-                Helping our clients build the digital institutions of tomorrow
-                by deploying complex and cutting-edge tech in a utilisable
-                fashion.
-              </p> */}
-      {/* </div> */}
-      {/* </div> */}
-      {/* </div> */}
-
-      {/* <svg
-          className="absolute w-full top-40 left-0 h-44 pointer-events-none z-0"
-          viewBox="0 0 1440 320"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <linearGradient
-              id="beautifulWaveGradient"
-              x1="0%"
-              y1="0%"
-              x2="100%"
-              y2="0%"
-            >
-              <stop offset="0%" stopColor="#60a5fa" />
-              <stop offset="50%" stopColor="#3b82f6" />
-              <stop offset="100%" stopColor="#1e3a8a" />
-            </linearGradient>
-            <filter id="glow">
-              <feGaussianBlur stdDeviation="4" result="coloredBlur" />
-              <feMerge>
-                <feMergeNode in="coloredBlur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-          <path
-            fill="none"
-            stroke="url(#beautifulWaveGradient)"
-            strokeWidth="3"
-            d="M0,160 C180,80 360,240 540,160 S900,80 1080,160 S1260,240 1440,160"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            filter="url(#glow)"
-          />
-        </svg> */}
-      {/* </section> */}
-
-      {/* Meet Our Team Section */}
-      <section className="relative bg-black py-12 text-white  ">
+      {/* Video Section */}
+      <section className="relative bg-black py-12 text-white">
         <h2 className="text-4xl font-bold text-center text-sky-400 mb-6">
           Lorem, ipsum dolor.
         </h2>
@@ -258,7 +132,8 @@ export default function OurStory() {
           Officiis earum amet facilis.
         </p>
 
-        <div className="relative w-[50%] h-[50%] ml-[10%] rounded-2xl overflow-hidden shadow-xl">
+        {/* ✅ Video container */}
+        <div className="relative w-[60%] h-[60%] mx-auto rounded-2xl overflow-hidden shadow-xl">
           <video
             src={Services}
             alt="Our Story"
@@ -271,25 +146,21 @@ export default function OurStory() {
           />
         </div>
 
-        <div className="relative w-full h-[100vh] max-w-7xl mx-auto">
+        {/* ✅ Bubbles Section */}
+        <div className="relative w-full h-[100vh] max-w-7xl mx-auto mt-16">
           {bubbles.map((bubble, idx) => (
-            // bubble.type === "image" ? (
-            //   <img
-            //     key={idx}
-            //     src={bubble.src}
-            //     alt="team member"
-            //     className={`absolute ${bubble.x} ${bubble.y} w-28 h-28 md:w-36 md:h-36 rounded-full object-cover shadow-lg border-2 border-white`}
-            //   />
-            // ) :
             <div
               key={idx}
-              className={`absolute ${bubble.x} ${bubble.y} w-24 h-24 md:w-28 md:h-28 flex items-center justify-center rounded-full ${bubble.color} text-white font-semibold text-center text-sm px-2 shadow-xl`}
+              className={`absolute ${bubble.x} ${bubble.y} w-24 h-24 md:w-28 md:h-28 
+              flex items-center justify-center rounded-full ${bubble.color} 
+              text-white font-semibold text-center text-sm px-2 shadow-xl`}
             >
               {bubble.text}
             </div>
           ))}
         </div>
       </section>
+
       <Footer />
     </section>
   );

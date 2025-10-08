@@ -151,11 +151,19 @@ export default function Home() {
         {/* Content Section */}
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12">
           {/* Left - Mobile Mockup */}
-          <div className="flex-1 flex justify-center">
+          {/* <div className="flex-1 flex justify-center">
             <img
               src={india}
               alt="Digital Banking App"
               className="h-[300px] md:h-[400px] drop-shadow-2xl"
+            />
+          </div> */}
+
+          <div className="flex-1 flex justify-center">
+            <img
+              src={india}
+              alt="Digital Banking App"
+              className="h-[350px] md:h-[500px] drop-shadow-2xl"
             />
           </div>
 
