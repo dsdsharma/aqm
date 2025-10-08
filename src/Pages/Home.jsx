@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import demoImage from "../Images/herolanding.png";
+import demoImage from "../Images/hero1.mp4";
 import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
 import tpeImg from "../Images/tpe.png";
@@ -16,7 +16,7 @@ import pineImg from "../Images/pine.png";
 import axisfinanceImg from "../Images/axisfinance.png";
 import viImg from "../Images/vi.png";
 import puneImg from "../Images/pune.png";
-import axismaxImg from "../Images/axismax.png";
+import axismaxImg from "../Images/ax.jpg";
 
 import storyImg from "../Images/story.jpg";
 
@@ -66,7 +66,7 @@ export default function Home() {
     <section className="bg-black text-white">
       {/* Hero Section */}
       {/* <div className="flex w-full items-center h-[650px] px-4"> */}
-      <img src={demoImage}></img>
+      <video src={demoImage} autoPlay muted loop playsInline></video>
       <div
       //className="flex w-full items-center h-[800px] px-4 bg-cover bg-center"
       //style={{ backgroundImage: url(${demoImage}) }}
