@@ -5,7 +5,7 @@ import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm.png";
-import sbiImg from "../Images/cardsbi.png";
+import sbiImg from "../Images/cardsbi1.png";
 import cholaImg from "../Images/chola.png";
 import rblImg from "../Images/rblbank.png";
 import nykaaImg from "../Images/nykaa.png";
@@ -15,7 +15,7 @@ import yesImg from "../Images/pine.png";
 import pineImg from "../Images/pine.png";
 import axisfinanceImg from "../Images/axisfinance.png";
 import viImg from "../Images/vi.png";
-import puneImg from "../Images/poonawala.png";
+import puneImg from "../Images/poonawala1.png";
 import axismaxImg from "../Images/axisbank.png";
 
 import storyImg from "../Images/story.jpg";
@@ -97,10 +97,10 @@ export default function Home() {
               <img src={cholaImg} alt="Story" className="h-12 mx-auto" />
             </div> */}
             <div>
-              <img src={rblImg} alt="Business" className="h-24 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
             </div>
             <div>
-              <img src={sbiImg} alt="Story" className="h-24 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
             </div>
             {/* <div>
               <img src={nykaaImg} alt="Story" className="h-12 mx-auto" />
