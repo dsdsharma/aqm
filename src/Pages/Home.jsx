@@ -276,7 +276,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      s{/* Unrivaled Technology Section with Video Background */}
+      {/* Unrivaled Technology Section with Video Background */}
       <section className="relative bg-black text-white py-28 flex items-center justify-center text-center overflow-hidden mt-16 ">
         {/* Background Video */}
         <video
