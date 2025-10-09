@@ -5,9 +5,9 @@ import indiaMap from "../Images/india_map.mp4";
 // import demoGif from "../Images/hero.gif";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm.png";
-import sbiImg from "../Images/sbi.png";
+import sbiImg from "../Images/cardsbi.png";
 import cholaImg from "../Images/chola.png";
-import rblImg from "../Images/rbl.png";
+import rblImg from "../Images/rblbank.png";
 import nykaaImg from "../Images/nykaa.png";
 import bajajImg from "../Images/bajaj.png";
 import hclImg from "../Images/hcl.png";
@@ -15,8 +15,8 @@ import yesImg from "../Images/pine.png";
 import pineImg from "../Images/pine.png";
 import axisfinanceImg from "../Images/axisfinance.png";
 import viImg from "../Images/vi.png";
-import puneImg from "../Images/pune.png";
-import axismaxImg from "../Images/ax.jpg";
+import puneImg from "../Images/poonawala.png";
+import axismaxImg from "../Images/axisbank.png";
 
 import storyImg from "../Images/story.jpg";
 
@@ -26,7 +26,7 @@ import "slick-carousel/slick/slick.css"; // ✅ Needed for react-slick
 import "slick-carousel/slick/slick-theme.css";
 import india from "../Images/digital.gif"; // ✅ import image
 import techVideo from "../Images/techno.mp4"; // ✅ background video
-import mobile from "../Images/mobile1.png"; // ✅ new image (replace with yours)
+import mobileVideo from "../Images/mobile2.mp4"; // ✅ new image (replace with yours)
 
 // ✅ Partnership Logos
 import icici from "../Images/icici.jpg";
@@ -90,47 +90,74 @@ export default function Home() {
       <div className="mt-20">
         <div className="mt-4 w-full">
           <Slider {...settings}>
-            <div>
+            {/* <div>
               <img src={tpeImg} alt="Business" className="h-12 mx-auto" />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img src={cholaImg} alt="Story" className="h-12 mx-auto" />
+            </div> */}
+            <div>
+              <img src={rblImg} alt="Business" className="h-24 mx-auto" />
             </div>
             <div>
-              <img src={rblImg} alt="Business" className="h-12 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-24 mx-auto" />
             </div>
-            <div>
-              <img src={sbiImg} alt="Story" className="h-12 mx-auto" />
-            </div>
-            <div>
+            {/* <div>
               <img src={nykaaImg} alt="Story" className="h-12 mx-auto" />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img src={paytmImg} alt="Business" className="h-12 mx-auto" />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img src={bajajImg} alt="Story" className="h-12 mx-auto" />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img src={hclImg} alt="Story" className="h-12 mx-auto" />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img src={yesImg} alt="Story" className="h-12 mx-auto" />
-            </div>
+            </div> */}
             <div>
-              <img src={axismaxImg} alt="Story" className="h-12 mx-auto" />
+              <img src={axismaxImg} alt="Story" className="h-30 mx-auto" />
             </div>
-            <div>
+            {/* <div>
               <img src={axisfinanceImg} alt="Story" className="h-12 mx-auto" />
-            </div>
-            <div>
+            </div> */}
+            {/* <div>
               <img src={viImg} alt="Story" className="h-12 mx-auto" />
             </div>
             <div>
               <img src={pineImg} alt="Story" className="h-12 mx-auto" />
+            </div> */}
+            <div>
+              <img src={puneImg} alt="Story" className="h-30 mx-auto" />
             </div>
             <div>
-              <img src={puneImg} alt="Story" className="h-12 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={axismaxImg} alt="Story" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={puneImg} alt="Story" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={axismaxImg} alt="Story" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+            </div>
+            <div>
+              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
             </div>
           </Slider>
         </div>
@@ -163,7 +190,7 @@ export default function Home() {
             <img
               src={india}
               alt="Digital Banking App"
-              className="h-[350px] md:h-[500px] drop-shadow-2xl"
+              className="h-[450px] md:h-[600px] drop-shadow-2xl"
             />
           </div>
 
@@ -238,9 +265,12 @@ export default function Home() {
 
           {/* Right Image */}
           <div className="relative md:w-1/2 flex justify-center">
-            <img
-              src={mobile}
-              alt="Vision"
+            <video
+              src={mobileVideo} // replace with your actual video import, e.g. import mobileVideo from "../Images/mobile.mp4"
+              autoPlay
+              loop
+              muted
+              playsInline
               className="w-[600px] max-w-full object-contain"
             />
           </div>
