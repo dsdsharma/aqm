@@ -142,7 +142,7 @@ export default function Home() {
             style={{ color: "#d8b9ff" }}
           >
             Lorem ipsum dolor sit amet consectetur adipisicing. <br />
-            Lorem ipsum dolor sit amet.
+            Lorem ipsum dolor sit amet?
           </h1>
         </div>
 
