@@ -117,67 +117,74 @@ export default function Home() {
       {/* ✅ 2-Carousel Section */}
 
       <div className="mt-20">
+        {" "}
         <div className="mt-4 w-full">
+          {" "}
           <Slider {...settings}>
-            {/* Slide Item */}
-            <div className="px-5 w-[150px]">
-              <img
-                src={rblImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={sbiImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={axismaxImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={puneImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={rblImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={sbiImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={axismaxImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-            <div className="px-5 w-[150px]">
-              <img
-                src={puneImg}
-                alt="Business"
-                className="h-[60px] w-full object-contain"
-              />
-            </div>
-          </Slider>
-        </div>
+            {" "}
+            {/* <div> <img src={tpeImg} alt="Business" className="h-12" /> </div> */}{" "}
+            {/* <div> <img src={cholaImg} alt="Story" className="h-12" /> </div> */}{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={rblImg} alt="Business" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={sbiImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            {/* <div> <img src={nykaaImg} alt="Story" className="h-12" /> </div> */}{" "}
+            {/* <div> <img src={paytmImg} alt="Business" className="h-12" /> </div> */}{" "}
+            {/* <div> <img src={bajajImg} alt="Story" className="h-12" /> </div> */}{" "}
+            {/* <div> <img src={hclImg} alt="Story" className="h-12" /> </div> */}{" "}
+            {/* <div> <img src={yesImg} alt="Story" className="h-12" /> </div> */}{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={axismaxImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            {/* <div> <img src={axisfinanceImg} alt="Story" className="h-12" /> </div> */}{" "}
+            {/* <div> <img src={viImg} alt="Story" className="h-12" /> </div> <div> <img src={pineImg} alt="Story" className="h-12" /> </div> */}{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={puneImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={rblImg} alt="Business" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={sbiImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={axismaxImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={puneImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={rblImg} alt="Business" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={sbiImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={axismaxImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={rblImg} alt="Business" className="h-30" />{" "}
+            </div>{" "}
+            <div style={{ width: "150px", paddingInline: "20px" }}>
+              {" "}
+              <img src={sbiImg} alt="Story" className="h-30" />{" "}
+            </div>{" "}
+          </Slider>{" "}
+        </div>{" "}
       </div>
 
       {/* Digital Banking Section */}
