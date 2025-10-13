@@ -26,21 +26,12 @@ export default function Footer() {
 
       {/* Footer Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
-        {/* Left - Logo + Copyright */}
+        {/* Left - Logo */}
         <div className="flex flex-col items-center md:items-start mr-8">
-          {/* <h1 className="text-3xl font-bold">
-            <span className="text-white">CRED</span>
-            <span className="text-sky-500">ITAS</span>
-          </h1> */}
           <img src={logoAqm} alt="AQM Logo" className="h-[90px] w-auto" />
-
-          <p className="text-gray-400 mt-2 text-sm">
-            Copyright © 2025. All Rights Reserved <br />
-            with Alphaquick Mobility Pvt Ltd.
-          </p>
         </div>
 
-        {/* Middle - Links (using NavLink like navbar) */}
+        {/* Middle - Links */}
         <div className="flex flex-wrap justify-center gap-6 text-sm">
           <NavLink to="/" className="hover:text-sky-400">
             Home
@@ -51,9 +42,6 @@ export default function Footer() {
           <NavLink to="/Caascloud" className="hover:text-sky-400">
             CaaS Cloud
           </NavLink>
-          {/* <NavLink to="/industries" className="hover:text-sky-400">
-            Industries
-          </NavLink> */}
           <NavLink to="/aboutus" className="hover:text-sky-400">
             About Us
           </NavLink>
@@ -82,6 +70,17 @@ export default function Footer() {
             </a>
           </div>
         </div>
+      </div>
+
+      {/* ✅ Copyright - Always at Bottom on Mobile */}
+      <div className="relative z-10 mt-8 text-center text-gray-400 text-sm md:hidden">
+        Copyright © 2025. All Rights Reserved <br />
+        with Alphaquick Mobility Pvt Ltd.
+      </div>
+
+      {/* ✅ Shown inline only on desktop */}
+      <div className="hidden md:block relative z-10 text-gray-400 text-sm text-left max-w-7xl mx-auto px-6 mt-4">
+        Copyright © 2025. All Rights Reserved with Alphaquick Mobility Pvt Ltd.
       </div>
     </footer>
   );

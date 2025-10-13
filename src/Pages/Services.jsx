@@ -16,111 +16,9 @@ export default function OurStory() {
     window.scrollTo(0, 0);
   }, []);
 
-  const bubbles = [
-    {
-      type: "label",
-      text: "Services1",
-      color: "bg-red-800",
-      x: "left-[10%]",
-      y: "top-[45%]",
-    },
-    {
-      type: "label",
-      text: "Services2",
-      color: "bg-purple-400",
-      x: "left-[45%]",
-      y: "top-[25%]",
-    },
-    {
-      type: "label",
-      text: "Services3",
-      color: "bg-red-500",
-      x: "right-[10%]",
-      y: "top-[35%]",
-    },
-    {
-      type: "label",
-      text: "Services4",
-      color: "bg-purple-400",
-      x: "left-[20%]",
-      y: "top-[65%]",
-    },
-    {
-      type: "label",
-      text: "Services5",
-      color: "bg-pink-300",
-      x: "left-[35%]",
-      y: "top-[60%]",
-    },
-    {
-      type: "label",
-      text: "Services6",
-      color: "bg-green-400",
-      x: "left-[40%]",
-      y: "top-[80%]",
-    },
-    {
-      type: "label",
-      text: "Services7",
-      color: "bg-purple-400",
-      x: "left-[50%]",
-      y: "top-[70%]",
-    },
-    {
-      type: "label",
-      text: "Services8",
-      color: "bg-green-500",
-      x: "right-[28%]",
-      y: "top-[65%]",
-    },
-    {
-      type: "label",
-      text: "Services9",
-      color: "bg-red-400",
-      x: "right-[15%]",
-      y: "top-[50%]",
-    },
-    {
-      type: "label",
-      text: "Services10",
-      color: "bg-yellow-400",
-      x: "right-[24%]",
-      y: "top-[82%]",
-    },
-  ];
-
   return (
     <section className="relative w-full bg-black text-white">
-      <div className="pt-24"></div>
-
-      {/* Description Section */}
-      <section className="bg-black text-white py-16 px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-12">
-          <div
-            className={`md:w-1/2 transition-opacity duration-2000 delay-700 ${
-              loaded ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <h1 className="text-3xl md:text-4xl font-bold leading-snug">
-              Lorem, ipsum dolor. <br /> Lorem ipsum dolor sit.
-            </h1>
-          </div>
-
-          <div
-            className={`md:w-1/2 transition-opacity duration-2000 delay-900 ${
-              loaded ? "opacity-100" : "opacity-0"
-            }`}
-          >
-            <p className="text-gray-300 text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
-              ullam provident repudiandae, at amet sit iure ipsam iste incidunt
-              aliquam tempore aliquid expedita consequatur fuga!
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Video Section */}
+      {/* ===================== Services Video Section ===================== */}
       <section className="relative bg-black py-12 text-white">
         <h2 className="text-4xl font-bold text-center text-sky-400 mb-6">
           Lorem, ipsum dolor.
@@ -133,7 +31,7 @@ export default function OurStory() {
         </p>
 
         {/* ✅ Video container */}
-        <div className="relative w-[60%] h-[60%] mx-auto rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl">
           <video
             src={Services}
             alt="Our Story"
@@ -145,22 +43,167 @@ export default function OurStory() {
             loop
           />
         </div>
+      </section>
 
-        {/* ✅ Bubbles Section */}
-        <div className="relative w-full h-[100vh] max-w-7xl mx-auto mt-16">
-          {bubbles.map((bubble, idx) => (
-            <div
-              key={idx}
-              className={`absolute ${bubble.x} ${bubble.y} w-24 h-24 md:w-28 md:h-28 
-              flex items-center justify-center rounded-full ${bubble.color} 
-              text-white font-semibold text-center text-sm px-2 shadow-xl`}
-            >
-              {bubble.text}
+      {/* ===================== Voice AI Platform Section ===================== */}
+      <section className="bg-black text-white py-16 px-6 md:px-16">
+        {/* Header Section */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            Lorem, ipsum.<span className="text-blue-500">Lorem, ipsum.</span>{" "}
+            lorem
+          </h2>
+          <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.
+            Lorem, ipsum dolor.
+          </p>
+        </div>
+
+        {/* Content Section */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          {/* Left Side - Text */}
+          <div className="md:w-1/2 space-y-4">
+            <h3 className="text-2xl font-semibold">Lorem, ipsum dolor.</h3>
+            <p className="text-gray-400">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <ul className="space-y-3 mt-4">
+              {[
+                "Multi-channel voice bot deployment",
+                "Industry-specific conversation templates",
+                "Campaign monitoring and analytics",
+                "Automated lead qualification and follow-up",
+              ].map((item, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={2}
+                      stroke="white"
+                      className="w-4 h-4"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                  </span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-lg mt-6 shadow-lg">
+              Learn More
+            </button>
+          </div>
+
+          {/* Right Side - Campaign Table */}
+          <div className="md:w-1/2 bg-gray-900 rounded-2xl shadow-xl overflow-hidden">
+            <div className="flex justify-between items-center p-5 border-b border-gray-700">
+              <h4 className="text-lg font-semibold">Campaign Management</h4>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm px-4 py-2 rounded-lg">
+                Create New Campaign +
+              </button>
             </div>
-          ))}
+
+            <table className="w-full text-sm text-gray-300">
+              <thead>
+                <tr className="border-b border-gray-700 text-left">
+                  <th className="p-3">Campaign Name</th>
+                  <th className="p-3">Status</th>
+                  <th className="p-3">Agent</th>
+                  <th className="p-3">Segment</th>
+                  <th className="p-3">Calls</th>
+                  <th className="p-3">Conversion</th>
+                </tr>
+              </thead>
+              <tbody>
+                {[
+                  {
+                    name: "Q3 Loan Collections",
+                    status: "Inactive",
+                    statusColor: "bg-red-500/20 text-red-400",
+                    agent: "Collections Bot",
+                    segment: "DPD 31–60 (Retail PL/CC)",
+                    calls: "15000 / 2400",
+                    conversion: "16%",
+                  },
+                  {
+                    name: "Payment Reminders",
+                    status: "Active",
+                    statusColor: "bg-green-500/20 text-green-400",
+                    agent: "Loan Reminders Bot",
+                    segment: "EMI due in 3–7 days",
+                    calls: "12000 / 4800",
+                    conversion: "40%",
+                  },
+                  {
+                    name: "Lead Qualification",
+                    status: "Pending",
+                    statusColor: "bg-yellow-500/20 text-yellow-400",
+                    agent: "Lead Qualification Bot",
+                    segment: "Pre-approved (CIBIL >700)",
+                    calls: "0 / 0",
+                    conversion: "--",
+                  },
+                  {
+                    name: "Account Opening",
+                    status: "Active",
+                    statusColor: "bg-green-500/20 text-green-400",
+                    agent: "Account Opening Bot",
+                    segment: "KYC drop-offs (incomplete apps)",
+                    calls: "20000 / 4400",
+                    conversion: "22%",
+                  },
+                ].map((row, i) => (
+                  <tr
+                    key={i}
+                    className="border-b border-gray-800 hover:bg-gray-800/50"
+                  >
+                    <td className="p-3 text-blue-400 cursor-pointer hover:underline">
+                      {row.name}
+                    </td>
+                    <td className="p-3">
+                      <span
+                        className={`px-2 py-1 text-xs font-semibold rounded-md ${row.statusColor}`}
+                      >
+                        {row.status}
+                      </span>
+                    </td>
+                    <td className="p-3">{row.agent}</td>
+                    <td className="p-3">{row.segment}</td>
+                    <td className="p-3">{row.calls}</td>
+                    <td className="p-3 font-semibold">{row.conversion}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+
+            <div className="flex justify-around text-center py-4 border-t border-gray-700">
+              <div>
+                <p className="text-gray-400 text-sm">Total Campaigns</p>
+                <p className="font-semibold text-lg">4</p>
+              </div>
+              <div>
+                <p className="text-gray-400 text-sm">Active Campaigns</p>
+                <p className="font-semibold text-lg text-green-400">2</p>
+              </div>
+              <div>
+                <p className="text-gray-400 text-sm">Avg. Conversion</p>
+                <p className="font-semibold text-lg text-blue-400">26%</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
+      {/* ===================== Footer ===================== */}
       <Footer />
     </section>
   );
