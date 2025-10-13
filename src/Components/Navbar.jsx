@@ -10,7 +10,7 @@ export default function Navbar() {
 
   return (
     <div>
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black/90 backdrop-blur-md text-white px-6 flex items-center justify-between shadow-md">
+      <nav className="fixed top-0 left-0 w-full z-[9999] bg-black/90 backdrop-blur-md text-white px-6 flex items-center justify-between shadow-md">
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
