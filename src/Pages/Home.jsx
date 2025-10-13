@@ -120,73 +120,73 @@ export default function Home() {
         <div className="mt-4 w-full">
           <Slider {...settings}>
             {/* <div>
-              <img src={tpeImg} alt="Business" className="h-12 mx-auto" />
+              <img src={tpeImg} alt="Business" className="h-12 mx-5" />
             </div> */}
             {/* <div>
-              <img src={cholaImg} alt="Story" className="h-12 mx-auto" />
+              <img src={cholaImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             <div>
-              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-30 mx-5" />
             </div>
             {/* <div>
-              <img src={nykaaImg} alt="Story" className="h-12 mx-auto" />
+              <img src={nykaaImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             {/* <div>
-              <img src={paytmImg} alt="Business" className="h-12 mx-auto" />
+              <img src={paytmImg} alt="Business" className="h-12 mx-5" />
             </div> */}
             {/* <div>
-              <img src={bajajImg} alt="Story" className="h-12 mx-auto" />
+              <img src={bajajImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             {/* <div>
-              <img src={hclImg} alt="Story" className="h-12 mx-auto" />
+              <img src={hclImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             {/* <div>
-              <img src={yesImg} alt="Story" className="h-12 mx-auto" />
+              <img src={yesImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             <div>
-              <img src={axismaxImg} alt="Story" className="h-30 mx-auto" />
+              <img src={axismaxImg} alt="Story" className="h-30 mx-5" />
             </div>
             {/* <div>
-              <img src={axisfinanceImg} alt="Story" className="h-12 mx-auto" />
+              <img src={axisfinanceImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             {/* <div>
-              <img src={viImg} alt="Story" className="h-12 mx-auto" />
+              <img src={viImg} alt="Story" className="h-12 mx-5" />
             </div>
             <div>
-              <img src={pineImg} alt="Story" className="h-12 mx-auto" />
+              <img src={pineImg} alt="Story" className="h-12 mx-5" />
             </div> */}
             <div>
-              <img src={puneImg} alt="Story" className="h-30 mx-auto" />
+              <img src={puneImg} alt="Story" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={axismaxImg} alt="Story" className="h-30 mx-auto" />
+              <img src={axismaxImg} alt="Story" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={puneImg} alt="Story" className="h-30 mx-auto" />
+              <img src={puneImg} alt="Story" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={axismaxImg} alt="Story" className="h-30 mx-auto" />
+              <img src={axismaxImg} alt="Story" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={rblImg} alt="Business" className="h-30 mx-auto" />
+              <img src={rblImg} alt="Business" className="h-30 mx-5" />
             </div>
             <div>
-              <img src={sbiImg} alt="Story" className="h-30 mx-auto" />
+              <img src={sbiImg} alt="Story" className="h-30 mx-5" />
             </div>
           </Slider>
         </div>
