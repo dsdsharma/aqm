@@ -28,7 +28,7 @@ export default function HeroSection() {
         <p className="text-gray-300 max-w-2xl mx-auto mb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
           eligendi temporibus porro nemo. Quas odit nesciunt ipsum enim aliquam,
-          excepturi cupiditate ex illo voluptatibus voluptate?2
+          excepturi cupiditate ex illo voluptatibus voluptate?
         </p>
 
         {/* Client Logos */}

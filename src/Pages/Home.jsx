@@ -19,7 +19,7 @@ import axisfinanceImg from "../Images/axisfinance.png";
 import viImg from "../Images/vi.png";
 import puneImg from "../Images/poonawala1.png";
 import axismaxImg from "../Images/axisbank.png";
-
+import Marquee from "react-fast-marquee";
 import storyImg from "../Images/story.jpg";
 
 import Slider from "react-slick";
@@ -116,76 +116,23 @@ export default function Home() {
       </div> */}
       {/* ✅ 2-Carousel Section */}
 
-      <div className="mt-20">
-        {" "}
-        <div className="mt-4 w-full">
-          {" "}
-          <Slider {...settings}>
-            {" "}
-            {/* <div> <img src={tpeImg} alt="Business" className="h-12" /> </div> */}{" "}
-            {/* <div> <img src={cholaImg} alt="Story" className="h-12" /> </div> */}{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={rblImg} alt="Business" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={sbiImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            {/* <div> <img src={nykaaImg} alt="Story" className="h-12" /> </div> */}{" "}
-            {/* <div> <img src={paytmImg} alt="Business" className="h-12" /> </div> */}{" "}
-            {/* <div> <img src={bajajImg} alt="Story" className="h-12" /> </div> */}{" "}
-            {/* <div> <img src={hclImg} alt="Story" className="h-12" /> </div> */}{" "}
-            {/* <div> <img src={yesImg} alt="Story" className="h-12" /> </div> */}{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={axismaxImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            {/* <div> <img src={axisfinanceImg} alt="Story" className="h-12" /> </div> */}{" "}
-            {/* <div> <img src={viImg} alt="Story" className="h-12" /> </div> <div> <img src={pineImg} alt="Story" className="h-12" /> </div> */}{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={puneImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={rblImg} alt="Business" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={sbiImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={axismaxImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={puneImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={rblImg} alt="Business" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={sbiImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={axismaxImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={rblImg} alt="Business" className="h-30" />{" "}
-            </div>{" "}
-            <div style={{ width: "150px", paddingInline: "20px" }}>
-              {" "}
-              <img src={sbiImg} alt="Story" className="h-30" />{" "}
-            </div>{" "}
-          </Slider>{" "}
-        </div>{" "}
-      </div>
+      <Marquee>
+        <div className="flex gap-8">
+          <img src={rblImg} alt="Business" className="h-30" />
+          <img src={sbiImg} alt="Story" className="h-30" />
+          <img src={axismaxImg} alt="Story" className="h-30" />
+          <img src={puneImg} alt="Story" className="h-30" />
+          <img src={rblImg} alt="Business" className="h-30" />
+          <img src={sbiImg} alt="Story" className="h-30" />
+          <img src={axismaxImg} alt="Story" className="h-30" />
+          <img src={puneImg} alt="Story" className="h-30" />
+          <img src={rblImg} alt="Business" className="h-30" />
+          <img src={sbiImg} alt="Story" className="h-30" />
+          <img src={axismaxImg} alt="Story" className="h-30" />
+          <img src={rblImg} alt="Business" className="h-30" />
+          <img src={sbiImg} alt="Story" className="h-30 pr-8" />
+        </div>
+      </Marquee>
 
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
