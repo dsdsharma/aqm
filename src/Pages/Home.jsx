@@ -1,8 +1,4 @@
 import { Link } from "react-router-dom";
-
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
 import demoImage from "../Images/hero1.mp4";
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
@@ -22,10 +18,7 @@ import axismaxImg from "../Images/axisbank.png";
 import Marquee from "react-fast-marquee";
 import storyImg from "../Images/story.jpg";
 
-import Slider from "react-slick";
 import { ArrowRight } from "lucide-react";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import india from "../Images/digital.gif";
 import techVideo from "../Images/techno.mp4";
 import mobileVideo from "../Images/mobile2.mp4";
@@ -80,7 +73,7 @@ export default function Home() {
   };
 
   return (
-    <section className="bg-black text-white">
+    <section className="bg-black text-white pt-[30px] md:pt-0">
       {/* Hero Section */}
       <video src={demoImage} autoPlay muted loop playsInline></video>
       <div>
