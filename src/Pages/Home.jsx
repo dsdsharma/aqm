@@ -42,7 +42,7 @@ export default function Home() {
     setLoaded(true);
   }, []);
 
-  const settings = {
+   const settings = {
     dots: false,
     infinite: true,
     slidesToShow: 8,
@@ -71,6 +71,12 @@ export default function Home() {
       },
     ],
   };
+
+  const statsData = [
+    { title: "Tele callers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
+    { title: "FOS", subtitle: "on Field", value: "400+", bg: "bg-sky-500" },
+    { title: "Languages", subtitle: "covered", value: "21", bg: "bg-blue-800" },
+  ];
 
   return (
     <section className="bg-black text-white pt-[30px] md:pt-0">
@@ -134,8 +140,8 @@ export default function Home() {
             className="text-3xl md:text-4xl px-2 font-bold mt-40"
             style={{ color: "#d8b9ff" }}
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing. <br />
-            Lorem ipsum dolor sit amet?
+            INDIA’S ONLY COMPANY TO HAVE A NATION-WIDE  <br />
+            VOICE & FIELD OPERATIONS
           </h1>
         </div>
 
@@ -157,11 +163,31 @@ export default function Home() {
             </p>
 
             <p className="text-gray-300 leading-relaxed px-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque rem
-              nam quia aut sed in incidunt voluptatum ipsum quis, similique
-              laboriosam, provident vero cum expedita eum consequuntur dolor
-              aliquam recusandae officiis magni adipisci.
-            </p>
+            	Debt Collections & Credit operations for BFSI & Telcos
+          
+  </p>
+    <p className="text-gray-300 leading-relaxed px-2">
+       
+  	A comprehensive digital collections suite incl. LLM/NLP bot, field mobility app, propensity models, etc.  
+  </p>
+    <p className="text-gray-300 leading-relaxed px-2">
+      	Outcome based pricing model.
+          
+  </p>
+
+  {/* ✅ Stats Cards */}
+            <div className="flex flex-col md:flex-row gap-4 p-4">
+              {statsData.map((stat, index) => (
+                <div
+                  key={index}
+                  className={`${stat.bg} text-white rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] w-full md:w-1/3 p-6 shadow-md`}
+                >
+                  <p className="text-lg font-medium">{stat.title}</p>
+                  <p className="text-sm">{stat.subtitle}</p>
+                  <p className="text-3xl font-bold mt-2">{stat.value}</p>
+                </div>
+              ))}
+            </div>
 
             <Link
               to="/services"
@@ -201,13 +227,17 @@ export default function Home() {
               className="text-3xl md:text-5xl font-bold leading-snug mb-6"
               style={{ color: "#d8b9ff" }}
             >
-              Lorem ipsum dolor sit. <br /> Lorem ipsum dolor sit amet.
+              AI DRIVEN FIELD ENGAGEMENT APPLICATION
             </h2>
 
             <p className="text-lg text-gray-300 mb-8">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br />
-              Lorem ipsum dolor sit amet, consectetur adipisicing. <br />
-              Lorem ipsum dolor sit amet consectetur.
+              AI DRIVEN FIELD ENGAGEMENT APPLICATION
+            </p>
+            <p className="text-lg text-gray-300 mb-8">
+            Resource optimization through roster and schedule management
+            </p>
+            <p className="text-lg text-gray-300 mb-8">
+              Seamless handshake between FOS and Call Centre
             </p>
 
             <Link

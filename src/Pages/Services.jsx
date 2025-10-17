@@ -21,17 +21,20 @@ export default function OurStory() {
       {/* ===================== Services Video Section ===================== */}
       <section className="relative bg-black py-12 text-white">
         <h2 className="text-4xl font-bold text-center text-sky-400 mb-6">
-          Lorem, ipsum dolor.
+          COMPREHENSIVE SUIT OF PHYGITAL SERVICE OFFERINGS
         </h2>
-        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mb-20">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-          corporis quibusdam officia maxime eos dolor nemo quas error eaque
-          temporibus velit, cupiditate modi necessitatibus repudiandae quasi.
-          Officiis earum amet facilis.
+        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
+          AI Comms Orchestration.
+        </p>
+        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
+          An AI engine that does the customer scoring and allocates the most appropriate collection service.
+        </p>
+        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
+          The AI engine self learns with data.
         </p>
 
         {/* ✅ Video container */}
-        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl">
+        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-10 ">
           <video
             src={Services}
             alt="Our Story"
