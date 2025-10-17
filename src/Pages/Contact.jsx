@@ -12,6 +12,9 @@ export default function ContactPage() {
     message: "",
   });
 
+  // ✅ Loading state
+  const [loading, setLoading] = useState(false);
+
   // ✅ Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -21,6 +24,7 @@ export default function ContactPage() {
   // ✅ Handle form submission with EmailJS
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .send(
@@ -41,10 +45,11 @@ export default function ContactPage() {
             timer: 2500,
             background: "#111",
             color: "#fff",
-            confirmButtonColor: "#22c55e", // Tailwind green-500
+            confirmButtonColor: "#22c55e",
           });
 
           setFormData({ name: "", phone: "", email: "", message: "" });
+          setLoading(false);
         },
         (error) => {
           console.error("❌ FAILED...", error);
@@ -54,19 +59,22 @@ export default function ContactPage() {
             text: "Something went wrong. Please try again later.",
             icon: "error",
             confirmButtonText: "Okay",
-            confirmButtonColor: "#ef4444", // Tailwind red-500
+            confirmButtonColor: "#ef4444",
             background: "#111",
             color: "#fff",
           });
+
+          setLoading(false);
         }
       );
   };
 
+
+
+
   return (
     <div className="min-h-screen bg-[#1f1f1f] flex justify-center items-center px-4 py-10">
-      {/* Outer Container */}
       <div className="bg-[#2a2a2a] w-full max-w-6xl rounded-2xl shadow-xl p-6 md:p-10 flex flex-col md:flex-row gap-10 text-white relative">
-        {/* Close Button (optional for modal style) */}
         <button className="absolute top-4 right-4 text-white text-2xl hover:text-gray-400">
           ✕
         </button>
@@ -74,7 +82,6 @@ export default function ContactPage() {
         {/* Left Section */}
         <div className="w-full md:w-1/2 flex flex-col space-y-4">
           <img src={logo} alt="aqm Logo" className="h-[100px] w-[100px]" />
-
           <h2 className="text-2xl font-semibold leading-snug">
             Reach us at <br />
           </h2>
@@ -153,11 +160,37 @@ export default function ContactPage() {
               ></textarea>
             </div>
 
-            <button
-              type="submit"
-              className="w-full py-2 rounded bg-gradient-to-r from-sky-400 to-purple-300 text-black font-semibold hover:opacity-90 transition"
-            >
-              Submit
+             <button
+            type="submit"
+            className={`w-full py-2 px-4 bg-gradient-to-r from-sky-400 to-purple-300 rounded font-semibold text-black hover:opacity-90 transition flex items-center justify-center ${
+              loading ? "cursor-not-allowed" : "cursor-pointer"
+            }`}
+            disabled={loading}
+          >
+              {loading ? (
+                <svg
+                  className="animate-spin h-5 w-5 text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                  ></circle>
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                  ></path>
+                </svg>
+              ) : (
+                "Submit"
+              )}
             </button>
           </form>
         </div>

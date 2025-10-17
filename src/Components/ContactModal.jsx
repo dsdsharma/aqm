@@ -1,6 +1,7 @@
 // src/components/ContactModal.jsx
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 export default function ContactModal({ isOpen, onClose }) {
   if (!isOpen) return null;
@@ -12,6 +13,8 @@ export default function ContactModal({ isOpen, onClose }) {
     message: "",
   });
 
+  const [loading, setLoading] = useState(false); // ✅ Loading state
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -19,10 +22,11 @@ export default function ContactModal({ isOpen, onClose }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     emailjs
       .send(
-        "service_lf1r0wb", // ✅ Your updated Service ID
+        "service_lf1r0wb", // ✅ Your Service ID
         "template_we3q7dn", // ✅ Your Template ID
         formData,
         "y1ZeA1DdZgghv5hq5" // ✅ Your Public Key
@@ -30,13 +34,36 @@ export default function ContactModal({ isOpen, onClose }) {
       .then(
         (response) => {
           console.log("✅ SUCCESS!", response.status, response.text);
-          alert("Your message has been sent successfully!");
+
+          Swal.fire({
+            title: "Message Sent!",
+            text: "Your message has been sent successfully. We’ll contact you soon!",
+            icon: "success",
+            showConfirmButton: false,
+            timer: 2500,
+            background: "#111",
+            color: "#fff",
+            confirmButtonColor: "#22c55e",
+          });
+
           setFormData({ name: "", phone: "", email: "", message: "" });
+          setLoading(false);
           onClose();
         },
         (error) => {
           console.error("❌ FAILED...", error);
-          alert("Something went wrong. Please try again later.");
+
+          Swal.fire({
+            title: "Oops!",
+            text: "Something went wrong. Please try again later.",
+            icon: "error",
+            confirmButtonText: "Okay",
+            confirmButtonColor: "#ef4444",
+            background: "#111",
+            color: "#fff",
+          });
+
+          setLoading(false);
         }
       );
   };
@@ -46,7 +73,7 @@ export default function ContactModal({ isOpen, onClose }) {
       <div className="bg-gray-900 text-white rounded-xl w-full max-w-lg p-6 relative">
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl font-bold"
+          className="absolute top-3 right-3 text-gray-400 hover:text-white text-xl font-bold cursor-pointer"
         >
           ✕
         </button>
@@ -107,9 +134,35 @@ export default function ContactModal({ isOpen, onClose }) {
 
           <button
             type="submit"
-            className="w-full py-2 px-4 bg-gradient-to-r from-sky-400 to-purple-300 rounded font-semibold text-black hover:opacity-90 transition"
+            className={`w-full py-2 px-4 bg-gradient-to-r from-sky-400 to-purple-300 rounded font-semibold text-black hover:opacity-90 transition flex items-center justify-center ${
+              loading ? "cursor-not-allowed" : "cursor-pointer"
+            }`}
+            disabled={loading}
           >
-            Submit
+            {loading ? (
+              <svg
+                className="animate-spin h-5 w-5 text-black"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+              >
+                <circle
+                  className="opacity-25"
+                  cx="12"
+                  cy="12"
+                  r="10"
+                  stroke="currentColor"
+                  strokeWidth="4"
+                ></circle>
+                <path
+                  className="opacity-75"
+                  fill="currentColor"
+                  d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                ></path>
+              </svg>
+            ) : (
+              "Submit"
+            )}
           </button>
         </form>
       </div>
