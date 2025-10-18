@@ -70,8 +70,6 @@ export default function ContactPage() {
   };
 
 
-
-
   return (
     <div className="min-h-screen bg-[#1f1f1f] flex justify-center items-center px-4 py-10">
       <div className="bg-[#2a2a2a] w-full max-w-6xl rounded-2xl shadow-xl p-6 md:p-10 flex flex-col md:flex-row gap-10 text-white relative">
@@ -88,14 +86,14 @@ export default function ContactPage() {
 
           <div className="text-gray-300 space-y-1">
             <p>info@aqmedge.com</p>
-            <p>C-133-B, Sector 2, Noida - 201 301</p>
+            <p>778, Udyog Vihar, Phase V, Gurugram - 122016</p>
           </div>
 
           {/* Google Map Embed */}
           <div className="mt-4">
             <iframe
               title="AQM Edge Map"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3503.0250114420085!2d77.05933807478886!3d28.597494185169514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d18d84b0a6dfd%3A0xeecf77d60a2611b!2sCreditas%20Solutions!5e0!3m2!1sen!2sin!4v1727831000000!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d219.1391667301359!2d77.08511250034285!3d28.50282733590715!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1943f5c4ae37%3A0x8cb9e735984fbe5c!2s778%2C%20Phase%20V%2C%20Udyog%20Vihar%2C%20Sector%2019%2C%20Gurugram%2C%20Haryana%20122016!5e0!3m2!1sen!2sin!4v1760813975945!5m2!1sen!2sin"
               width="100%"
               height="200"
               style={{ border: 0 }}
