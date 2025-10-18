@@ -52,7 +52,7 @@ export default function Footer() {
 
         {/* Right - Contact */}
         <div className="flex flex-col items-center md:items-end gap-2">
-          <p className="text-gray-300 text-sm">info@aqm.in</p>
+          <p className="text-gray-300 text-sm">info@aqmedge.com</p>
           <div className="flex gap-3">
             <a
               href="#"

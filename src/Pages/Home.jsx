@@ -137,7 +137,7 @@ export default function Home() {
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
           <h1
-            className="text-3xl md:text-4xl px-2 font-bold mt-40"
+            className="text-3xl md:text-4xl px-2 font-bold mt-20"
             style={{ color: "#d8b9ff" }}
           >
             INDIA’S ONLY COMPANY TO HAVE A NATION-WIDE  <br />
@@ -221,7 +221,7 @@ export default function Home() {
 
       {/* Mobile Video Section */}
       <section className="relative bg-black text-white py-20">
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
           <div className="md:w-1/2 px-6 md:pl-16">
             <h2
               className="text-3xl md:text-5xl font-bold leading-snug mb-6"

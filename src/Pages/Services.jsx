@@ -20,21 +20,21 @@ export default function OurStory() {
     <section className="relative w-full bg-black text-white">
       {/* ===================== Services Video Section ===================== */}
       <section className="relative bg-black py-12 text-white">
-        <h2 className="text-4xl font-bold text-center text-sky-400 mb-6">
+        <h2 className="text-4xl font-bold text-center text-sky-400 mt-5">
           COMPREHENSIVE SUIT OF PHYGITAL SERVICE OFFERINGS
         </h2>
-        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
+        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-5 ">
           AI Comms Orchestration.
         </p>
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
-          An AI engine that does the customer scoring and allocates the most appropriate collection service.
+         AI engine that does customer scoring and allocates the most appropriate collection service.
         </p>
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
           The AI engine self learns with data.
         </p>
 
         {/* ✅ Video container */}
-        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-10 ">
+        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-15 ">
           <video
             src={Services}
             alt="Our Story"
@@ -63,7 +63,7 @@ export default function OurStory() {
         </div>
 
         {/* Content Section */}
-        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
           {/* Left Side - Text */}
           <div className="md:w-1/2 space-y-4">
             <h3 className="text-2xl font-semibold">Lorem, ipsum dolor.</h3>
