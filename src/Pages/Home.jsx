@@ -231,7 +231,7 @@ export default function Home() {
             </h2>
 
             <p className="text-lg text-gray-300 mb-8">
-              AI DRIVEN FIELD ENGAGEMENT APPLICATION
+              Route and time planning engine for FOS visit
             </p>
             <p className="text-lg text-gray-300 mb-8">
             Resource optimization through roster and schedule management
