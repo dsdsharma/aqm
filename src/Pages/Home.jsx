@@ -22,6 +22,8 @@ import { ArrowRight } from "lucide-react";
 import india from "../Images/digital.gif";
 import techVideo from "../Images/techno.mp4";
 import mobileVideo from "../Images/mobile2.mp4";
+import { Shield, Lock, EyeOff } from "lucide-react";
+
 
 // import icici from "../Images/icici.jpg";
 // import idfc from "../Images/idfc.jpg";
@@ -78,6 +80,23 @@ export default function Home() {
     { title: "Languages", subtitle: "covered", value: "21", bg: "bg-blue-800" },
   ];
 
+   const features = [
+    {
+      icon: <Shield size={40} className="text-white mb-4" />,
+      title: "Highly Secure DPDP compliant",
+      desc: "Compliance with security standards & data protection regulations",
+    },
+    {
+      icon: <Lock size={40} className="text-white mb-4" />,
+      title: "SSO + Session-level Access Control",
+      desc: "Secure authentication and granular permission management for all users",
+    },
+    {
+      icon: <EyeOff size={40} className="text-white mb-4" />,
+      title: "Field Masking, Tab-only Co-browse, No Full Screen",
+      desc: "Enhanced privacy protection during collaborative sessions",
+    },
+  ];
   return (
     <section className="bg-black text-white pt-[30px] md:pt-0">
       {/* Hero Section */}
@@ -330,6 +349,22 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+  <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-24">
+        {features.map((item, index) => (
+          <div
+            key={index}
+            className="text-center border border-pink-300 rounded-lg p-6 bg-black hover:bg-gray-900 transition-colors duration-300"
+          >
+            <div className="flex justify-center">{item.icon}</div>
+            <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+              {item.title}
+            </h3>
+            <p className="text-sm text-gray-300">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+
         </div>
       </section>
 

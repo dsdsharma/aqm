@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
-import Services from "../Images/services.mp4";
+import Services from "../Images/aqmservices.mp4";
 import Footer from "./Footer";
 
 export default function OurStory() {
@@ -34,7 +34,7 @@ export default function OurStory() {
         </p> */}
 
         {/* ✅ Video container */}
-        <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-15 ">
+        <div className="relative w-[60%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-15 ">
           <video
             src={Services}
             alt="Our Story"
