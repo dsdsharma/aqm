@@ -2,6 +2,10 @@ import React from "react";
 import bgImage from "../Images/aboutus.png"; // adjust the path as needed
 import { useEffect, useState } from "react";
 import Footer from "../Pages/Footer";
+import aqmLogo1 from "../Images/aboutlogo.png";
+import aqmLogo2 from "../Images/amslogo.png";
+
+
 
 export default function HeroSection() {
   const [loaded, setLoaded] = useState(false);
@@ -20,21 +24,45 @@ export default function HeroSection() {
 
         <div className="relative z-10 max-w-4xl text-center">
           {/* Main Heading */}
-          <h1 className="text-3xl md:text-5xl font-bold mb-6 leading-snug">
-            Lorem ipsum dolor sit amet,
-            <br />
-            Lorem, ipsum dolor.
-          </h1>
+         {/* <h1
+  className="text-3xl md:text-4xl font-bold mb-6 leading-snug"
+  style={{ color: "#d8b9ff" }}
+>
+  About AQM
+</h1> */}
+
+
+<h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center gap-3">
+      About AQM
+      <img
+        src={aqmLogo1}
+        alt="AQM Logo"
+        className="w-8 h-8 inline-block"
+      />
+    </h1>
 
           {/* Subtext */}
           <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-            eligendi temporibus porro nemo. Quas odit nesciunt ipsum enim
-            aliquam, excepturi cupiditate ex illo voluptatibus voluptate?
+            Promoted by AMS, the Alpha Quick Mobility Pvt. Ltd. forays into creating the AI powered next-gen data platform and apps to optimize the collections through all channels. Its field collection team has penetration across Pan-India.
           </p>
+<h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center gap-3">
+      About AMS Comtel
+      <img
+        src={aqmLogo2}
+        alt="AQM Logo"
+        className="w-32 h-8 inline-block"
+      />
+    </h1>
+
+          {/* Subtext */}
+          <p className="text-gray-300 max-w-2xl mx-auto mb-10">
+India’s pioneer collections company. A 35-year-old entity, with marquee & vintage client base, commands a price-premium due to domain-expertise and thus, highly profitable.          </p>
+
+
+
 
           {/* Client Logos */}
-          <div className="flex flex-wrap justify-center items-center gap-10 opacity-90">
+          <div className="flex flex-wrap justify-center items-center gap-10 opacity-90 mt-16">
             <img
               src="https://dummyimage.com/80x40/fff/000&text=Genpact"
               alt="Genpact"

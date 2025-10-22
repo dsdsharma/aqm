@@ -29,9 +29,9 @@ export default function OurStory() {
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
          AI engine that does customer scoring and allocates the most appropriate collection service.
         </p>
-        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
+        {/* <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
           The AI engine self learns with data.
-        </p>
+        </p> */}
 
         {/* ✅ Video container */}
         <div className="relative w-[50%] h-[50%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-15 ">
@@ -52,7 +52,7 @@ export default function OurStory() {
       <section className="bg-black text-white py-16 px-6 md:px-16">
         {/* Header Section */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          <h2 className="text-3xl md:text-4xl font-bold mt-10">
             Lorem, ipsum.<span className="text-blue-500">Lorem, ipsum.</span>{" "}
             lorem
           </h2>

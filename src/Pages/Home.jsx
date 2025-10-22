@@ -23,15 +23,15 @@ import india from "../Images/digital.gif";
 import techVideo from "../Images/techno.mp4";
 import mobileVideo from "../Images/mobile2.mp4";
 
-import icici from "../Images/icici.jpg";
-import idfc from "../Images/idfc.jpg";
-import rbl from "../Images/rbl.jpg";
-import sbi from "../Images/sbi.jpg";
-import axis from "../Images/axis.jpg";
-import yes from "../Images/yes.jpg";
-import citi from "../Images/citi.jpg";
-import cibil from "../Images/cibil.jpg";
-import indus from "../Images/indus.jpg";
+// import icici from "../Images/icici.jpg";
+// import idfc from "../Images/idfc.jpg";
+// import rbl from "../Images/rbl.jpg";
+// import sbi from "../Images/sbi.jpg";
+// import axis from "../Images/axis.jpg";
+// import yes from "../Images/yes.jpg";
+// import citi from "../Images/citi.jpg";
+// import cibil from "../Images/cibil.jpg";
+// import indus from "../Images/indus.jpg";
 import Footer from "../Pages/Footer";
 import { useState, useEffect } from "react";
 

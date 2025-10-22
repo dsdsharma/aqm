@@ -2,9 +2,9 @@
 import React from "react";
 import ethvideo from "../Images/control.mp4";
 import ethvideo1 from "../Images/cloud.png";
-import ethvideo2 from "../Images/ethvideo2.mp4";
-import ethvideo3 from "../Images/ethvideo3.mp4";
-import ethvideo4 from "../Images/ethvideo4.mp4";
+// import ethvideo2 from "../Images/ethvideo2.mp4";
+// import ethvideo3 from "../Images/ethvideo3.mp4";
+// import ethvideo4 from "../Images/ethvideo4.mp4";
 import Footer from "../Pages/Footer";
 
 export default function NeoCollections() {
