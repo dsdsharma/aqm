@@ -349,21 +349,34 @@ export default function Home() {
               </div>
             ))}
           </div>
+          
+ <div className="max-w-6xl mx-auto px-6 mt-24">
+  <h2
+    className="text-center text-2xl md:text-3xl font-bold mb-8 tracking-wide"
+    style={{ color: "#d8b9ff" }}
+  >
+    SECURE & COMPLIANT
+  </h2>
 
-  <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6 mt-24">
-        {features.map((item, index) => (
-          <div
-            key={index}
-            className="text-center border border-pink-300 rounded-lg p-6 bg-black hover:bg-gray-900 transition-colors duration-300"
-          >
-            <div className="flex justify-center">{item.icon}</div>
-            <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
-              {item.title}
-            </h3>
-            <p className="text-sm text-gray-300">{item.desc}</p>
-          </div>
-        ))}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-18">
+    {features.map((item, index) => (
+      <div
+        key={index}
+        className="text-center border rounded-lg p-6 bg-black hover:bg-gray-900 transition-colors duration-300"
+        style={{ borderColor: "#d8b9ff" }}
+      >
+        <div className="flex justify-center">{item.icon}</div>
+        <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+          {item.title}
+        </h3>
+        <p className="text-sm text-gray-300">{item.desc}</p>
       </div>
+    ))}
+  </div>
+</div>
+
+
+      
 
         </div>
       </section>
