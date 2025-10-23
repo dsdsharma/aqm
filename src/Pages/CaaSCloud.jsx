@@ -1,7 +1,7 @@
 // src/components/NeoCollections.jsx
 import React from "react";
 import ethvideo from "../Images/control.mp4";
-import ethvideo1 from "../Images/cloud.png";
+import ethvideo1 from "../Images/cloud.mp4";
 // import ethvideo2 from "../Images/ethvideo2.mp4";
 // import ethvideo3 from "../Images/ethvideo3.mp4";
 // import ethvideo4 from "../Images/ethvideo4.mp4";
@@ -54,23 +54,33 @@ export default function NeoCollections() {
           </h1>
 
           {/* Video Block */}
-          <div className="w-full max-w-5xl rounded-lg overflow-hidden  border-gray-700">
-            <img src={ethvideo1} alt="Our Story" className="w-full h-auto" />
-          </div>
+<div className="max-w-xl mx-auto rounded-lg overflow-hidden mt-5">
+  <video
+    src={ethvideo1}
+    autoPlay
+    loop
+    muted
+    playsInline
+    className="w-full h-auto rounded-lg"
+  />
+</div>
+
+
+
 
           {/* NEW SECTION */}
           <div className="text-center mt-10">
-            <p className="text-gray-400 text-lg mb-6">
+            {/* <p className="text-gray-400 text-lg mb-6">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui,
               ipsam?
               <br />
               Lorem ipsum dolor sit amet consectetur adipisicing.{" "}
-            </p>
+            </p> */}
 
-            <button className="text-orange-500 text-lg font-semibold hover:underline flex items-center gap-2">
+            {/* <button className="text-orange-500 text-lg font-semibold hover:underline flex items-center gap-2">
               SEE IT IN ACTION
               <span className="text-xl">→</span>
-            </button>
+            </button> */}
           </div>
         </div>
 
