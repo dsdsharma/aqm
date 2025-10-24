@@ -80,23 +80,24 @@ export default function Home() {
     { title: "Languages", subtitle: "covered", value: "21", bg: "bg-blue-800" },
   ];
 
-   const features = [
-    {
-      icon: <Shield size={40} className="text-white mb-4" />,
-      title: "Highly Secure DPDP compliant",
-      desc: "Compliance with security standards & data protection regulations",
-    },
-    {
-      icon: <Lock size={40} className="text-white mb-4" />,
-      title: "SSO + Session-level Access Control",
-      desc: "Secure authentication and granular permission management for all users",
-    },
-    {
-      icon: <EyeOff size={40} className="text-white mb-4" />,
-      title: "Field Masking, Tab-only Co-browse, No Full Screen",
-      desc: "Enhanced privacy protection during collaborative sessions",
-    },
-  ];
+ const features = [
+  {
+    icon: <Shield size={40} className="text-black mb-4" />,
+    title: "Highly Secure DPDP compliant",
+    desc: "Compliance with security standards & data protection regulations",
+  },
+  {
+    icon: <Lock size={40} className="text-black mb-4" />,
+    title: "SSO + Session-level Access Control",
+    desc: "Secure authentication and granular permission management for all users",
+  },
+  {
+    icon: <EyeOff size={40} className="text-black mb-4" />,
+    title: "Field Masking, Tab-only Co-browse, No Full Screen",
+    desc: "Enhanced privacy protection during collaborative sessions",
+  },
+];
+
   return (
     <section className="bg-black text-white pt-[30px] md:pt-0">
       {/* Hero Section */}
@@ -358,21 +359,25 @@ export default function Home() {
     SECURE & COMPLIANT
   </h2>
 
-  <div className="grid grid-cols-1 md:grid-cols-3 gap-18">
-    {features.map((item, index) => (
-      <div
-        key={index}
-        className="text-center border rounded-lg p-6 bg-black hover:bg-gray-900 transition-colors duration-300"
-        style={{ borderColor: "#d8b9ff" }}
-      >
-        <div className="flex justify-center">{item.icon}</div>
-        <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
-          {item.title}
-        </h3>
-        <p className="text-sm text-gray-300">{item.desc}</p>
-      </div>
-    ))}
-  </div>
+<div className="grid grid-cols-1 md:grid-cols-3 gap-18">
+  {features.map((item, index) => (
+    <div
+      key={index}
+      className="text-center rounded-lg p-6 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
+      style={{ backgroundColor: "#f5eef6", borderColor: "#d8b9ff" }}
+    >
+      <div className="flex justify-center">{item.icon}</div>
+      <h3 className="text-lg md:text-xl font-semibold text-black mb-2">
+        {item.title}
+      </h3>
+      <p className="text-sm text-gray-700">{item.desc}</p>
+    </div>
+  ))}
+</div>
+
+
+
+
 </div>
 
 

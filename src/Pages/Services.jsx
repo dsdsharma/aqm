@@ -64,7 +64,7 @@ export default function OurStory() {
         {/* Content Section */}
         <div className="flex flex-col md:flex-row items-center gap-20 mt-10">
           {/* Left Side - Text */}
-          <div className="md:w-1/2 space-y-4 ml-25 ">
+          <div className="md:w-1/2 space-y-4 ml-50 ">
             <h3 className="text-2xl font-semibold">Lorem, ipsum dolor.</h3>
             <p className="text-gray-400">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -107,7 +107,7 @@ export default function OurStory() {
           </div>
 
           {/* Responsive Campaign Management Section */}
-          <div className="w-full md:w-1/3 bg-gray-900 rounded-2xl shadow-xl overflow-hidden mr-25 ">
+          <div className="w-full md:w-1/3 bg-gray-900 rounded-2xl shadow-xl overflow-hidden mr-50 ">
             {/* Header */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-5 border-b border-gray-700">
               <h4 className="text-lg font-semibold mb-2 sm:mb-0">
