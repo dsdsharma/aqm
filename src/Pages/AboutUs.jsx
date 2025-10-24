@@ -32,31 +32,37 @@ export default function HeroSection() {
 </h1> */}
 
 
-<h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center gap-3">
-      About AQM
-      <img
-        src={aqmLogo1}
-        alt="AQM Logo"
-        className="w-8 h-8 inline-block"
-      />
-    </h1>
+<div className="text-center">
+  <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-3">
+    About AQM
+    <img
+      src={aqmLogo1}
+      alt="AQM Logo"
+      className="w-8 h-8 inline-block"
+    />
+  </h1>
 
-          {/* Subtext */}
-          <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-            Promoted by AMS, the Alpha Quick Mobility Pvt. Ltd. forays into creating the AI powered next-gen data platform and apps to optimize the collections through all channels. Its field collection team has penetration across Pan-India.
-          </p>
-<h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center gap-3">
-      About AMS Comtel
-      <img
-        src={aqmLogo2}
-        alt="AQM Logo"
-        className="w-32 h-8 inline-block"
-      />
-    </h1>
+  {/* Subtext */}
+  <p className="text-gray-300 max-w-2xl mx-auto mb-10">
+    Promoted by AMS, the Alpha Quick Mobility Pvt. Ltd. forays into creating the AI-powered next-gen data platform and apps to optimize the collections through all channels. Its field collection team has penetration across Pan-India.
+  </p>
+</div>
 
-          {/* Subtext */}
-          <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-India’s pioneer collections company. A 35-year-old entity, with marquee & vintage client base, commands a price-premium due to domain-expertise and thus, highly profitable.          </p>
+<div className="text-center">
+  <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-3">
+    About AMS Comtel
+    <img
+      src={aqmLogo2}
+      alt="AQM Logo"
+      className="w-32 h-8 inline-block"
+    />
+  </h1>
+
+  {/* Subtext */}
+  <p className="text-gray-300 max-w-2xl mx-auto mb-10">
+    India’s pioneer collections company. A 35-year-old entity, with marquee & vintage client base, commands a price-premium due to domain expertise and thus, highly profitable.
+  </p>
+</div>
 
 
 
