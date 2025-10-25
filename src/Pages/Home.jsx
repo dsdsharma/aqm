@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero1.mp4";
+import demoImage from "../Images/hero2.mp4";
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
-import paytmImg from "../Images/paytm.png";
-import sbiImg from "../Images/cardsbi1.png";
-import cholaImg from "../Images/chola.png";
-import rblImg from "../Images/rblbank.png";
-import nykaaImg from "../Images/nykaa.png";
-import bajajImg from "../Images/bajaj.png";
-import hclImg from "../Images/hcl.png";
-import yesImg from "../Images/pine.png";
-import pineImg from "../Images/pine.png";
-import axisfinanceImg from "../Images/axisfinance.png";
-import viImg from "../Images/vi.png";
+import paytmImg from "../Images/paytm1.png";
+import sbiImg from "../Images/sbi1.png";
+import CholamandalamImg from "../Images/Cholamandalam1.png";
+import rblImg from "../Images/rbl1.png";
+import nykaaImg from "../Images/nykaa1.png";
+import bajajImg from "../Images/bajajlife1.png";
+import hclImg from "../Images/hcl1.png";
+import yesImg from "../Images/yes1.png";
+import pinelabsImg from "../Images/pinelabs1.png";
+import axisfinanceImg from "../Images/axisfinance1.png";
+import viImg from "../Images/vi1.png";
 import puneImg from "../Images/poonawala1.png";
-import axismaxImg from "../Images/axisbank.png";
+import axismaxImg from "../Images/axismax1.png";
 import Marquee from "react-fast-marquee";
-import storyImg from "../Images/story.jpg";
+import axisclientImg from "../Images/axisclient1.png";
 
 import { ArrowRight } from "lucide-react";
 import india from "../Images/digital.gif";
@@ -99,11 +99,11 @@ export default function Home() {
 ];
 
   return (
-    <section className="bg-black text-white pt-[30px] md:pt-0">
+    <section className="bg-black text-white lg:mt-[-20px]">
       {/* Hero Section */}
-      <video src={demoImage} autoPlay muted loop playsInline></video>
+      <video src={demoImage} autoPlay muted loop playsInline />
       <div>
-        <div className="w-[40%] flex items-center">
+        <div className="w-[40%] flex items-center ">
           <div className="ms-20"></div>
         </div>
       </div>
@@ -139,17 +139,19 @@ export default function Home() {
         <div className="flex gap-8">
           <img src={rblImg} alt="Business" className="h-30" />
           <img src={sbiImg} alt="Story" className="h-30" />
-          <img src={axismaxImg} alt="Story" className="h-30" />
+          <img src={viImg} alt="Story" className="h-30" />
           <img src={puneImg} alt="Story" className="h-30" />
-          <img src={rblImg} alt="Business" className="h-30" />
-          <img src={sbiImg} alt="Story" className="h-30" />
+          <img src={pinelabsImg} alt="Business" className="h-30" />
+          <img src={paytmImg} alt="Story" className="h-30" />
+          <img src={nykaaImg} alt="Story" className="h-30" />
+          <img src={axisclientImg} alt="Story" className="h-30" />
+          <img src={CholamandalamImg} alt="Business" className="h-30" />
+          <img src={bajajImg} alt="Story" className="h-30" />
           <img src={axismaxImg} alt="Story" className="h-30" />
-          <img src={puneImg} alt="Story" className="h-30" />
-          <img src={rblImg} alt="Business" className="h-30" />
-          <img src={sbiImg} alt="Story" className="h-30" />
-          <img src={axismaxImg} alt="Story" className="h-30" />
-          <img src={rblImg} alt="Business" className="h-30" />
-          <img src={sbiImg} alt="Story" className="h-30 pr-8" />
+          <img src={axisfinanceImg} alt="af" className="h-30" />
+          <img src={yesImg} alt="yes" className="h-30" />
+
+          <img src={hclImg} alt="hcl" className="h-30 pr-8" />
         </div>
       </Marquee>
 
