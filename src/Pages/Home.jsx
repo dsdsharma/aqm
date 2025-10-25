@@ -108,33 +108,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* ✅ 1-Carousel Section */}
-      {/* <div className="mt-20">
-        <div className="w-full">
-          <Slider {...settings}>
-            {[rblImg, sbiImg, axismaxImg, puneImg].map((img, idx) => (
-              <div className="px-4" key={idx}>
-                <img
-                  src={img}
-                  alt="Client"
-                  className="h-24 mx-auto object-contain"
-                />
-              </div>
-            ))}
-            {[rblImg, sbiImg, axismaxImg, puneImg].map((img, idx) => (
-              <div className="px-4" key={idx + 4}>
-                <img
-                  src={img}
-                  alt="Client"
-                  className="h-24 mx-auto object-contain"
-                />
-              </div>
-            ))}
-          </Slider>
-        </div>
-      </div> */}
-      {/* ✅ 2-Carousel Section */}
-
       <Marquee>
         <div className="flex gap-8">
           <img src={rblImg} alt="Business" className="h-30" />
