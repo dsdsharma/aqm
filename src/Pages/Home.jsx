@@ -35,7 +35,8 @@ import { Shield, Lock, EyeOff } from "lucide-react";
 // import cibil from "../Images/cibil.jpg";
 // import indus from "../Images/indus.jpg";
 import Footer from "../Pages/Footer";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { Counter } from "./Counter";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -98,6 +99,37 @@ export default function Home() {
   },
 ];
 
+
+
+
+
+  const [visible, setVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  const stats = [
+    { value: 2015, label: "Founding year", fixed: true },
+    { value: 460, label: "Team members", suffix: "+", step: 5 }, // ✅ step = 5
+    { value: 20, label: "Clients", suffix: "+" },
+    { value: 30, label: "Customers", suffix: "M", step: 1 },
+  ];
+
+  // 👀 Intersection Observer
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries[0].isIntersecting) {
+          setVisible(true);
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+
+    if (sectionRef.current) observer.observe(sectionRef.current);
+    return () => observer.disconnect();
+  }, []);
+
+
   return (
     <section className="bg-black text-white lg:mt-[-20px]">
       {/* Hero Section */}
@@ -131,13 +163,14 @@ export default function Home() {
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
-          <h1
-            className="text-3xl md:text-4xl px-2 font-bold mt-20"
-            style={{ color: "#d8b9ff" }}
-          >
-            INDIA’S ONLY COMPANY TO HAVE A NATION-WIDE  <br />
-            VOICE & FIELD OPERATIONS
-          </h1>
+         <h1
+  className="text-xl sm:text-2xl md:text-4xl px-2 font-bold"
+  style={{ color: "#d8b9ff" }}
+>
+  INDIA’S ONLY COMPANY TO HAVE A NATION-WIDE <br />
+  VOICE & FIELD OPERATIONS
+</h1>
+
         </div>
 
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12">
@@ -195,7 +228,7 @@ export default function Home() {
       </div>
 
       {/* Stats Section */}
-      <div className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center">
+      {/* <div className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center">
         {[
           ["2015", "Founding year"],
           ["460+", "Team members"],
@@ -212,7 +245,31 @@ export default function Home() {
             <p className="text-gray-400">{subtitle}</p>
           </div>
         ))}
-      </div>
+      </div> */}
+       <div
+      ref={sectionRef}
+      className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center gap-8"
+    >
+      {stats.map((item, i) => (
+        <div
+          key={i}
+          className={`transition-opacity duration-1000 delay-${i * 200} ${
+            visible ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <h2 className="text-3xl font-bold text-[#d8b9ff]">
+            {item.fixed
+              ? item.value
+              : visible
+              ? <Counter target={item.value} suffix={item.suffix} step={item.step || 1} />
+              : "0"}
+          </h2>
+          <p className="text-gray-400">{item.label}</p>
+        </div>
+      ))}
+    </div>
+
+      
 
       {/* Mobile Video Section */}
       <section className="relative bg-black text-white py-20">
@@ -225,15 +282,15 @@ export default function Home() {
               AI DRIVEN FIELD ENGAGEMENT APPLICATION
             </h2>
 
-            <p className="text-lg text-gray-300 mb-8">
-              Route and time planning engine for FOS visit
-            </p>
-            <p className="text-lg text-gray-300 mb-8">
-            Resource optimization through roster and schedule management
-            </p>
-            <p className="text-lg text-gray-300 mb-8">
-              Seamless handshake between FOS and Call Centre
-            </p>
+           <p className="text-lg text-gray-300 mb-3">
+  Route and time planning engine for FOS visit.
+</p>
+<p className="text-lg text-gray-300 mb-3">
+  Resource optimization through roster and schedule management.
+</p>
+<p className="text-lg text-gray-300 mb-6">
+  Seamless handshake between FOS and Call Centre.
+</p>
 
             <Link
               to="/services"

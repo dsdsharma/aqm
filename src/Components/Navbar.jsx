@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react"; // ✅ icons for menu toggle
-import logoAqm from "../Images/aqm.png";
+import logoAqm from "../Images/aqmm.png";
 import ContactModal from "./ContactModal";
 
 export default function Navbar() {

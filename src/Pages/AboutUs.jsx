@@ -33,14 +33,17 @@ export default function HeroSection() {
 
 
 <div className="text-center">
-  <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-3">
-    About AQM
-    <img
-      src={aqmLogo1}
-      alt="AQM Logo"
-      className="w-8 h-8 inline-block"
-    />
-  </h1>
+<h1
+  className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
+>
+  About AQM
+  <img
+    src={aqmLogo1}
+    alt="AQM Logo"
+    className="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 inline-block"
+  />
+</h1>
+
 
   {/* Subtext */}
   <p className="text-gray-300 max-w-2xl mx-auto mb-10">
@@ -49,14 +52,17 @@ export default function HeroSection() {
 </div>
 
 <div className="text-center">
-  <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-3">
-    About AMS Comtel
-    <img
-      src={aqmLogo2}
-      alt="AQM Logo"
-      className="w-32 h-8 inline-block"
-    />
-  </h1>
+ <h1
+  className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
+>
+  About AMS Comtel
+  <img
+    src={aqmLogo2}
+    alt="AQM Logo"
+    className="w-20 sm:w-24 md:w-32 h-6 sm:h-7 md:h-8 inline-block"
+  />
+</h1>
+
 
   {/* Subtext */}
   <p className="text-gray-300 max-w-2xl mx-auto mb-10">
