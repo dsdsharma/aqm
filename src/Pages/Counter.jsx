@@ -1,13 +1,14 @@
 import { useEffect, useState, useRef } from "react";
 
-// Counter component for animated numbers
+// Counter Component
 export function Counter({ target, suffix, step = 1 }) {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
     let start = 0;
-    const duration = 1500; // 1.5s
-    const stepTime = Math.max(10, Math.floor(duration / target));
+    const duration = 1500; // animation duration (1.5s)
+    const totalSteps = Math.ceil(target / step);
+    const stepTime = Math.max(10, Math.floor(duration / totalSteps));
 
     const timer = setInterval(() => {
       start += step;
