@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
-import Services from "../Images/aqmservices.mp4";
+import Services from "../Images/aqmservices.png";
 import Footer from "./Footer";
 
 export default function OurStory() {
@@ -25,28 +25,28 @@ export default function OurStory() {
 </h2>
 
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-5 ">
-          AI Comms Orchestration.
+          AI Agentic Comms Orchestration.
         </p>
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
-          AI engine that does customer scoring and allocates the most appropriate collection service.
+          AI engine driven smart allocation queues.
         </p>
         {/* <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
           The AI engine self learns with data.
         </p> */}
 
         {/* ✅ Video container */}
-      <div className="relative w-[90%] sm:w-[80%] md:w-[60%] h-[60%] mx-auto rounded-2xl overflow-hidden shadow-xl mt-15">
-  <video
+    <div className="relative w-full sm:w-[85%] md:w-[60%] aspect-[4/3] md:aspect-[16/9] mx-auto rounded-2xl overflow-hidden shadow-xl mt-10 bg-black flex items-center justify-center">
+  <img
     src={Services}
     alt="Our Story"
-    className={`w-full h-full object-cover brightness-90 transition-opacity duration-1000 pointer-events-none ${
+    className={`w-full h-full object-contain brightness-90 transition-opacity duration-1000 ${
       loaded ? "opacity-100" : "opacity-0"
     }`}
-    autoPlay
-    muted
-    loop
   />
 </div>
+
+
+
 
       </section>
 

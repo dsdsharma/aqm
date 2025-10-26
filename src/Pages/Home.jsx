@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero2.mp4";
+import demoImage from "../Images/hero3.mp4";
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm1.png";
@@ -77,7 +77,7 @@ export default function Home() {
 
   const statsData = [
     { title: "Tele callers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
-    { title: "FOS", subtitle: "on Field", value: "400+", bg: "bg-sky-500" },
+    { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-sky-500" },
     { title: "Languages", subtitle: "covered", value: "21", bg: "bg-blue-800" },
   ];
 
@@ -101,33 +101,33 @@ export default function Home() {
 
 
 
+// counter section
 
+  // const [visible, setVisible] = useState(false);
+  // const sectionRef = useRef(null);
 
-  const [visible, setVisible] = useState(false);
-  const sectionRef = useRef(null);
+  // const stats = [
+  //   { value: 2015, label: "Founding year", fixed: true },
+  //   { value: 460, label: "Team members", suffix: "+", step: 5 }, // ✅ step = 5
+  //   { value: 20, label: "Clients", suffix: "+" },
+  //   { value: 30, label: "Customers", suffix: "M", step: 1 },
+  // ];
 
-  const stats = [
-    { value: 2015, label: "Founding year", fixed: true },
-    { value: 460, label: "Team members", suffix: "+", step: 5 }, // ✅ step = 5
-    { value: 20, label: "Clients", suffix: "+" },
-    { value: 30, label: "Customers", suffix: "M", step: 1 },
-  ];
+  // // 👀 Intersection Observer
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       if (entries[0].isIntersecting) {
+  //         setVisible(true);
+  //         observer.disconnect();
+  //       }
+  //     },
+  //     { threshold: 0.3 }
+  //   );
 
-  // 👀 Intersection Observer
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        if (entries[0].isIntersecting) {
-          setVisible(true);
-          observer.disconnect();
-        }
-      },
-      { threshold: 0.3 }
-    );
-
-    if (sectionRef.current) observer.observe(sectionRef.current);
-    return () => observer.disconnect();
-  }, []);
+  //   if (sectionRef.current) observer.observe(sectionRef.current);
+  //   return () => observer.disconnect();
+  // }, []);
 
 
   return (
@@ -183,22 +183,22 @@ export default function Home() {
           </div>
 
           <div className="flex-1 text-center md:text-left space-y-6">
-            <h2 className="text-3xl md:text-4xl font-bold">
+            {/* <h2 className="text-3xl md:text-4xl font-bold">
               Lorem ipsum dolor sit.
-            </h2>
-            <p className="text-xl font-medium" style={{ color: "#d8b9ff" }}>
+            </h2> */}
+            {/* <p className="text-xl font-medium" style={{ color: "#d8b9ff" }}>
               Lorem ipsum dolor sit.
-            </p>
+            </p> */}
 
-            <p className="text-gray-300 leading-relaxed px-2">
+            <p className="text-gray-300 leading-relaxed px-2 text-xl">
             	Debt Collections & Credit operations for BFSI & Telcos
           
   </p>
-    <p className="text-gray-300 leading-relaxed px-2">
+    <p className="text-gray-300 leading-relaxed px-2 text-xl">
        
   	A comprehensive digital collections suite incl. LLM/NLP bot, field mobility app, propensity models, etc.  
   </p>
-    <p className="text-gray-300 leading-relaxed px-2">
+    <p className="text-gray-300 leading-relaxed px-2 text-xl">
       	Outcome based pricing model.
           
   </p>
@@ -225,54 +225,8 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </div>
+          {/* Mobile Video Section */}
 
-      {/* Stats Section */}
-      {/* <div className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center">
-        {[
-          ["2015", "Founding year"],
-          ["460+", "Team members"],
-          ["20+", "Clients"],
-          ["30M+", "Customers"],
-        ].map(([title, subtitle], i) => (
-          <div
-            key={title}
-            className={`transition-opacity duration-2000 delay-${
-              1100 + i * 200
-            } ${loaded ? "opacity-100" : "opacity-0"}`}
-          >
-            <h2 className="text-2xl font-bold">{title}</h2>
-            <p className="text-gray-400">{subtitle}</p>
-          </div>
-        ))}
-      </div> */}
-       <div
-      ref={sectionRef}
-      className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center gap-8"
-    >
-      {stats.map((item, i) => (
-        <div
-          key={i}
-          className={`transition-opacity duration-1000 delay-${i * 200} ${
-            visible ? "opacity-100" : "opacity-0"
-          }`}
-        >
-          <h2 className="text-3xl font-bold text-[#d8b9ff]">
-            {item.fixed
-              ? item.value
-              : visible
-              ? <Counter target={item.value} suffix={item.suffix} step={item.step || 1} />
-              : "0"}
-          </h2>
-          <p className="text-gray-400">{item.label}</p>
-        </div>
-      ))}
-    </div>
-
-      
-
-      {/* Mobile Video Section */}
-      <section className="relative bg-black text-white py-20">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
           <div className="md:w-1/2 px-6 md:pl-16">
             <h2
@@ -311,7 +265,37 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* Stats Section */}
+    
+       {/* <div
+      ref={sectionRef}
+      className="mt-32 grid grid-cols-2 md:grid-cols-4 text-center gap-8"
+    >
+      {stats.map((item, i) => (
+        <div
+          key={i}
+          className={`transition-opacity duration-1000 delay-${i * 200} ${
+            visible ? "opacity-100" : "opacity-0"
+          }`}
+        >
+          <h2 className="text-3xl font-bold text-[#d8b9ff]">
+            {item.fixed
+              ? item.value
+              : visible
+              ? <Counter target={item.value} suffix={item.suffix} step={item.step || 1} />
+              : "0"}
+          </h2>
+          <p className="text-gray-400">{item.label}</p>
+        </div>
+      ))}
+    </div> */}
+
+      
+
+      {/* Mobile Video Section */}
+      
 
       {/* ✅ Replaced "India Map" Section with AI Solutions */}
       <section className="bg-black text-white py-20">
@@ -419,7 +403,7 @@ export default function Home() {
       </section>
 
       {/* Partnerships */}
-      <section className="bg-black text-white py-20 px-6 text-center">
+      {/* <section className="bg-black text-white py-20 px-6 text-center">
         <h2
           className="text-3xl md:text-4xl font-bold"
           style={{ color: "#d8b9ff" }}
@@ -431,7 +415,7 @@ export default function Home() {
           Lorem ipsum dolor sit amet consectetur adipisicing. <br />
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sed.
         </p>
-      </section>
+      </section> */}
 
       <Footer />
     </section>
