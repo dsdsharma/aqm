@@ -23,35 +23,33 @@ export default function OurStory() {
     <section className="relative w-full bg-black text-white ">
       {/* ===================== Services Video Section ===================== */}
       <section className="relative bg-black py-12 text-white">
-        <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-sky-400 mt-5">
+    <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-sky-400 mt-5">
   COMPREHENSIVE SUIT OF PHYGITAL SERVICE OFFERINGS
 </h2>
 
-        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-3 ">
-          AI Agentic Comms Orchestration
-        </p>
-        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
-          AI driven smart allocation queues
-        </p>
-        {/* <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
-          The AI engine self learns with data.
-        </p> */}
+<p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-3">
+  AI Agentic Comms Orchestration
+</p>
+<p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4">
+  AI driven smart allocation queues
+</p>
 
-        {/* ✅ Video container */}
-    <div className="  relative w-full sm:w-[85%] md:w-[60%] aspect-[4/3] md:aspect-[16/9] mx-auto rounded-2xl overflow-hidden shadow-xl mt-10 bg-black flex items-center justify-center">
+{/* ✅ Video container (moved higher — almost touching text) */}
+<div className="relative w-full sm:w-[85%] md:w-[60%] aspect-[4/3] md:aspect-[16/9] mx-auto rounded-2xl overflow-hidden shadow-xl mt-1 bg-black flex items-center justify-center">
   <video
-  src={Services}
-  alt="Our Story"
-  className={`w-full h-full object-contain brightness-90 transition-opacity duration-1000 ${
-    loaded ? "opacity-100" : "opacity-0"
-  }`}
-  autoPlay
-  muted
-  loop
-  playsInline
-/>
-
+    src={Services}
+    alt="Our Story"
+    className={`w-full h-full object-contain brightness-90 transition-opacity duration-1000 ${
+      loaded ? "opacity-100" : "opacity-0"
+    }`}
+    autoPlay
+    muted
+    loop
+    playsInline
+  />
 </div>
+
+
 
 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
           <div className="md:w-1/2 px-6 md:pl-16">
