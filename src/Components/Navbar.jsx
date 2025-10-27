@@ -36,14 +36,14 @@ export default function Navbar() {
           >
             Services
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to="/Caascloud"
             className={({ isActive }) =>
               isActive ? "text-cyan-400 font-semibold" : "hover:text-cyan-400"
             }
           >
             CaaS Cloud
-          </NavLink>
+          </NavLink> */}
           <NavLink
             to="/aboutus"
             className={({ isActive }) =>

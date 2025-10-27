@@ -3,6 +3,8 @@ import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
 import Services from "../Images/aqmservices.mp4";
 import Footer from "./Footer";
+import mobileVideo from "../Images/mobile2.mp4";
+
 
 export default function OurStory() {
   const [loaded, setLoaded] = useState(false);
@@ -25,10 +27,10 @@ export default function OurStory() {
 </h2>
 
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-5 ">
-          AI Agentic Comms Orchestration.
+          AI Agentic Comms Orchestration
         </p>
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
-          AI engine driven smart allocation queues.
+          AI driven smart allocation queues
         </p>
         {/* <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
           The AI engine self learns with data.
@@ -50,6 +52,61 @@ export default function OurStory() {
 
 </div>
 
+<div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
+          <div className="md:w-1/2 px-6 md:pl-16">
+  <h3
+  className="text-base md:text-4xl font-bold leading-snug mb-4"
+  style={{ color: "#d8b9ff" }}
+>
+  AI DRIVEN FIELD ENGAGEMENT APPLICATION
+</h3>
+
+
+        <ul className="space-y-2">
+  {[
+    "Route and time planning engine for FOS visit.",
+    "Resource optimization through roster and schedule managment.",
+    "Seamless handshake between FOS and Call Center.",
+  ].map((item, index) => (
+    <li key={index} className="flex items-start text-lg text-gray-300">
+      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={3}
+          stroke="white"
+          className="w-3 h-3"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </span>
+      {item}
+    </li>
+  ))}
+</ul>
+
+
+            {/* <Link
+              to="/services"
+              className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
+            >
+              Know More <ArrowRight size={18} />
+            </Link> */}
+          </div>
+
+          <div className="relative md:w-1/2 flex justify-center">
+            <video
+              src={mobileVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className="w-[600px] max-w-full object-contain"
+            />
+          </div>
+        </div>
+
 
 
 
@@ -59,33 +116,41 @@ export default function OurStory() {
       <section className="bg-black text-white py-16 px-6 md:px-16">
         {/* Header Section */}
         <div className="text-center mb-12">
-         <h2 className="text-2xl md:text-4xl font-bold mt-4 md:mt-10">
+         {/* <h2 className="text-2xl md:text-4xl font-bold mt-4 md:mt-10">
   Lorem, ipsum.<span className="text-blue-500">Lorem, ipsum.</span> lorem
-</h2>
+</h2> */}
 
-          <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
+          {/* <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi.
             Lorem, ipsum dolor.
-          </p>
+          </p> */}
         </div>
 
         {/* Content Section */}
         <div className="flex flex-col md:flex-row items-center gap-20 mt-10">
           {/* Left Side - Text */}
           <div className="w-full md:w-1/2 space-y-4 md:ml-50 px-4 md:px-0 mt-8 md:mt-0">
-  <h3 className="text-xl sm:text-2xl font-semibold">Lorem, ipsum dolor.</h3>
-  <p className="text-gray-400 text-sm sm:text-base">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-    <br />
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+<h3
+  className="text-xl sm:text-2xl font-semibold"
+  style={{ color: "#d8b9ff" }}
+>
+  Descriptive, Predictive & Prescriptive Analytics
+</h3>
+  <p className="text-white text-sm sm:text-base">
+    Operational Efficiencies Through Data Driven Decision Making
+     
   </p>
 
   <ul className="space-y-2 sm:space-y-3 mt-3 sm:mt-4">
     {[
-      "Multi-channel voice bot deployment",
-      "Industry-specific conversation templates",
-      "Campaign monitoring and analytics",
-      "Automated lead qualification and follow-up",
+      "Propensity AI Model",
+      "Non-deterministic Workflow",
+      "Self-learning & multi-channel AI Bots",
+      "Speech Analytics & Voice Naturalization",
+     "Sector-specific Scripts",
+      "Role-based Digital Cockpit",
+
+
     ].map((item, index) => (
       <li key={index} className="flex items-start">
         <span className="bg-blue-600 rounded-full p-1 mr-2 sm:mr-3 mt-1">
@@ -109,9 +174,6 @@ export default function OurStory() {
     ))}
   </ul>
 
-  <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 sm:px-6 py-2 rounded-lg mt-4 sm:mt-6 shadow-lg text-sm sm:text-base">
-    Learn More
-  </button>
 </div>
 
 {/* Responsive Campaign Management Section */}

@@ -21,8 +21,10 @@ import axisclientImg from "../Images/axisclient1.png";
 import { ArrowRight } from "lucide-react";
 import india from "../Images/digital.gif";
 import techVideo from "../Images/techno.mp4";
-import mobileVideo from "../Images/mobile2.mp4";
+import ethvideo from "../Images/control.mp4";
+
 import { Shield, Lock, EyeOff } from "lucide-react";
+
 
 
 // import icici from "../Images/icici.jpg";
@@ -79,6 +81,8 @@ export default function Home() {
     { title: "Tele callers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
     { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-sky-500" },
     { title: "Languages", subtitle: "covered", value: "21", bg: "bg-blue-800" },
+    { title: "Lorem", subtitle: "covered", value: "50", bg: "bg-purple-800" },
+
   ];
 
  const features = [
@@ -140,7 +144,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Marquee>
+      {/* <Marquee>
         <div className="flex gap-8">
           <img src={rblImg} alt="Business" className="h-30" />
           <img src={sbiImg} alt="Story" className="h-30" />
@@ -158,7 +162,7 @@ export default function Home() {
 
           <img src={hclImg} alt="hcl" className="h-30 pr-8" />
         </div>
-      </Marquee>
+      </Marquee> */}
 
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
@@ -190,18 +194,38 @@ export default function Home() {
               Lorem ipsum dolor sit.
             </p> */}
 
-            <p className="text-gray-300 leading-relaxed px-2 text-xl">
-            	Debt Collections & Credit operations for BFSI & Telcos
-          
-  </p>
-    <p className="text-gray-300 leading-relaxed px-2 text-xl">
-       
-  	A comprehensive digital collections suite incl. LLM/NLP bot, field mobility app, propensity models, etc.  
-  </p>
-    <p className="text-gray-300 leading-relaxed px-2 text-xl">
-      	Outcome based pricing model.
-          
-  </p>
+         {/* <ul className="text-gray-300 leading-relaxed px-4 text-xl list-disc space-y-2">
+  <li>AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma.</li>
+  <li>State-of-the-art Tech for Digital Collections.</li>
+  <li>Outcome-based Pricing Model.</li>
+</ul> */}
+
+{/* in circle with blue tick */}
+
+<ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-2">
+  {[
+    "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma.",
+    "State-of-the-art Tech for Digital Collections.",
+    "Outcome-based Pricing Model.",
+  ].map((item, index) => (
+    <li key={index} className="flex items-start">
+      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={3}
+          stroke="white"
+          className="w-3 h-3"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </span>
+      <span>{item}</span>
+    </li>
+  ))}
+</ul>
+
 
   {/* ✅ Stats Cards */}
             <div className="flex flex-col md:flex-row gap-4 p-4">
@@ -211,7 +235,7 @@ export default function Home() {
                   className={`${stat.bg} text-white rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] w-full md:w-1/3 p-6 shadow-md`}
                 >
                   <p className="text-lg font-medium">{stat.title}</p>
-                  <p className="text-sm">{stat.subtitle}</p>
+                  {/* <p className="text-sm">{stat.subtitle}</p> */}
                   <p className="text-3xl font-bold mt-2">{stat.value}</p>
                 </div>
               ))}
@@ -225,45 +249,92 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
+{/* Ticker Section */}
+          <Marquee>
+        <div className="flex gap-8">
+          <img src={rblImg} alt="Business" className="h-30" />
+          <img src={sbiImg} alt="Story" className="h-30" />
+          <img src={viImg} alt="Story" className="h-30" />
+          <img src={puneImg} alt="Story" className="h-30" />
+          <img src={pinelabsImg} alt="Business" className="h-30" />
+          <img src={paytmImg} alt="Story" className="h-30" />
+          <img src={nykaaImg} alt="Story" className="h-30" />
+          <img src={axisclientImg} alt="Story" className="h-30" />
+          <img src={CholamandalamImg} alt="Business" className="h-30" />
+          <img src={bajajImg} alt="Story" className="h-30" />
+          <img src={axismaxImg} alt="Story" className="h-30" />
+          <img src={axisfinanceImg} alt="af" className="h-30" />
+          <img src={yesImg} alt="yes" className="h-30" />
+
+          <img src={hclImg} alt="hcl" className="h-30 pr-8" />
+        </div>
+      </Marquee>
+
           {/* Mobile Video Section */}
 
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
+        <div className=" container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
           <div className="md:w-1/2 px-6 md:pl-16">
-            <h2
-              className="text-3xl md:text-5xl font-bold leading-snug mb-6"
-              style={{ color: "#d8b9ff" }}
-            >
-              AI DRIVEN FIELD ENGAGEMENT APPLICATION
-            </h2>
+  <h3
+  className="text-base md:text-2xl font-bold leading-snug mb-4"
+  style={{ color: "#d8b9ff" }}
+>
+  Comprehensive Receivables Management Services
+</h3>
 
-           <p className="text-lg text-gray-300 mb-3">
-  Route and time planning engine for FOS visit.
-</p>
-<p className="text-lg text-gray-300 mb-3">
-  Resource optimization through roster and schedule management.
-</p>
-<p className="text-lg text-gray-300 mb-6">
-  Seamless handshake between FOS and Call Centre.
-</p>
+<h3
+  className="text-sm md:text-xl font-semibold leading-snug mb-3 text-white"
+>
+  Complete Outsourcing of the Credit Cycle
+</h3>
 
-            <Link
+
+
+
+        <ul className="space-y-2">
+  {[
+    "AQM to Enable a Level Playing Field for the Industry.",
+    "Outsource the Entire  Collections Function.",
+    "Move From Outsourcing to Business Partnership.",
+  ].map((item, index) => (
+    <li key={index} className="flex items-start text-lg text-gray-300">
+      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth={3}
+          stroke="white"
+          className="w-3 h-3"
+        >
+          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+        </svg>
+      </span>
+      {item}
+    </li>
+  ))}
+</ul>
+
+
+            {/* <Link
               to="/services"
               className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
             >
               Know More <ArrowRight size={18} />
-            </Link>
+            </Link> */}
           </div>
 
-          <div className="relative md:w-1/2 flex justify-center">
-            <video
-              src={mobileVideo}
-              autoPlay
-              loop
-              muted
-              playsInline
-              className="w-[600px] max-w-full object-contain"
-            />
-          </div>
+          <div className="flex justify-center md:justify-end mr-16">
+                     <video
+                       autoPlay
+                       muted
+                       loop
+                       playsInline
+                       className="w-[300px] md:w-[380px] rounded-2xl shadow-2xl"
+                     >
+                       <source src={ethvideo} type="video/mp4" />
+                     </video>
+                   </div>
         </div>
       </div>
 
@@ -300,15 +371,15 @@ export default function Home() {
       {/* ✅ Replaced "India Map" Section with AI Solutions */}
       <section className="bg-black text-white py-20">
         <div className="max-w-7xl mx-auto text-center px-6">
-          <h2 className="text-3xl md:text-4xl font-bold">
+          {/* <h2 className="text-3xl md:text-4xl font-bold">
             lorem <span className="text-blue-400">Lorem, ipsum.</span> lorem
-          </h2>
-          <p className="mt-4 text-lg text-gray-300">
+          </h2> */}
+          {/* <p className="mt-4 text-lg text-gray-300">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat!
             Lorem ipsum dolor sit amet consectetur.
-          </p>
+          </p> */}
 
-          <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          {/* <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 title: "AI-Powered Telesales",
@@ -365,9 +436,9 @@ export default function Home() {
                 </ul>
               </div>
             ))}
-          </div>
+          </div> */}
           
- <div className="max-w-6xl mx-auto px-6 mt-24">
+ <div className="max-w-6xl mx-auto px-6 mb-16">
   <h2
     className="text-center text-2xl md:text-3xl font-bold mb-8 tracking-wide"
     style={{ color: "#d8b9ff" }}
