@@ -2,19 +2,19 @@ import { Link } from "react-router-dom";
 import demoImage from "../Images/hero4.mp4";
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
-import paytmImg from "../Images/paytm1.png";
-import sbiImg from "../Images/sbi1.png";
-import CholamandalamImg from "../Images/Cholamandalam1.png";
-import rblImg from "../Images/rbl1.png";
-import nykaaImg from "../Images/nykaa1.png";
-import bajajImg from "../Images/bajajlife1.png";
-import hclImg from "../Images/hcl1.png";
-import yesImg from "../Images/yes1.png";
-import pinelabsImg from "../Images/pinelabs1.png";
-import axisfinanceImg from "../Images/axisfinance1.png";
-import viImg from "../Images/vi1.png";
-import puneImg from "../Images/poonawala1.png";
-import axismaxImg from "../Images/axismax1.png";
+import paytmImg from "../Images/paytm3.png";
+import sbiImg from "../Images/sbi3.png";
+import CholamandalamImg from "../Images/cholamandalam3.png";
+import rblImg from "../Images/rbl3.png";
+import nykaaImg from "../Images/nykaa3.png";
+import bajajImg from "../Images/bajaj3.png";
+import hclImg from "../Images/hcl3.png";
+import yesImg from "../Images/yes2.png";
+import pinelabsImg from "../Images/pinelabs3.png";
+import axisfinanceImg from "../Images/axisfinance3.png";
+import viImg from "../Images/vi2.png";
+import puneImg from "../Images/poonawala3.png";
+import axismaxImg from "../Images/axismax3.png";
 import Marquee from "react-fast-marquee";
 import axisclientImg from "../Images/axisclient1.png";
 
@@ -206,7 +206,7 @@ export default function Home() {
 
 {/* in circle with blue tick */}
 <div className="mb-22">
-<ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-4 ">
+<ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-8 ">
   {[
     "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma.",
     "State-of-the-art Tech for Digital Collections.",
