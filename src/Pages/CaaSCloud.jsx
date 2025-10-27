@@ -1,7 +1,7 @@
 // src/components/NeoCollections.jsx
 import React from "react";
 import ethvideo from "../Images/control.mp4";
-import ethvideo1 from "../Images/cloud.mp4";
+import ethvideo1 from "../Images/cloud1.png";
 // import ethvideo2 from "../Images/ethvideo2.mp4";
 // import ethvideo3 from "../Images/ethvideo3.mp4";
 // import ethvideo4 from "../Images/ethvideo4.mp4";
@@ -55,14 +55,12 @@ export default function NeoCollections() {
 
           {/* Video Block */}
 <div className="max-w-xl mx-auto rounded-lg overflow-hidden mt-5">
-  <video
-    src={ethvideo1}
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="w-full h-auto rounded-lg"
-  />
+  <img
+  src={ethvideo1}
+  alt="Our Story"
+  className="w-full h-auto rounded-lg object-cover"
+/>
+
 </div>
 
 
