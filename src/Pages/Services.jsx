@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
-import Services from "../Images/aqmservices.mp4";
+import Services from "../Images/aqmservices1.mp4";
 import Footer from "./Footer";
 import mobileVideo from "../Images/mobile2.mp4";
+import dashboard from "../Images/dashboard.png"
 
 
 export default function OurStory() {
@@ -19,14 +20,14 @@ export default function OurStory() {
   }, []);
 
   return (
-    <section className="relative w-full bg-black text-white">
+    <section className="relative w-full bg-black text-white ">
       {/* ===================== Services Video Section ===================== */}
       <section className="relative bg-black py-12 text-white">
         <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-sky-400 mt-5">
   COMPREHENSIVE SUIT OF PHYGITAL SERVICE OFFERINGS
 </h2>
 
-        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-5 ">
+        <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-3 ">
           AI Agentic Comms Orchestration
         </p>
         <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 ">
@@ -37,7 +38,7 @@ export default function OurStory() {
         </p> */}
 
         {/* ✅ Video container */}
-    <div className="relative w-full sm:w-[85%] md:w-[60%] aspect-[4/3] md:aspect-[16/9] mx-auto rounded-2xl overflow-hidden shadow-xl mt-10 bg-black flex items-center justify-center">
+    <div className="  relative w-full sm:w-[85%] md:w-[60%] aspect-[4/3] md:aspect-[16/9] mx-auto rounded-2xl overflow-hidden shadow-xl mt-10 bg-black flex items-center justify-center">
   <video
   src={Services}
   alt="Our Story"
@@ -141,7 +142,7 @@ export default function OurStory() {
      
   </p>
 
-  <ul className="space-y-2 sm:space-y-3 mt-3 sm:mt-4">
+  <ul className="space-y-2 sm:space-y-5 mt-3 sm:mt-4">
     {[
       "Propensity AI Model",
       "Non-deterministic Workflow",
@@ -177,19 +178,19 @@ export default function OurStory() {
 </div>
 
 {/* Responsive Campaign Management Section */}
-<div className="w-full md:w-1/3 bg-gray-900 rounded-2xl shadow-xl overflow-hidden mt-8 md:mt-0 md:mr-50 px-2 sm:px-0">
+{/* <div className="w-full md:w-1/3 bg-gray-900 rounded-2xl shadow-xl overflow-hidden mt-8 md:mt-0 md:mr-50 px-2 sm:px-0"> */}
   {/* Header */}
-  <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 border-b border-gray-700">
+  {/* <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center p-4 border-b border-gray-700">
     <h4 className="text-base sm:text-lg font-semibold mb-2 sm:mb-0">
       Campaign Management
     </h4>
     <button className="bg-blue-600 hover:bg-blue-700 text-white text-xs sm:text-sm px-3 sm:px-4 py-2 rounded-lg">
       Create New Campaign +
     </button>
-  </div>
+  </div> */}
 
   {/* Scrollable Table */}
-  <div className="overflow-x-auto">
+  {/* <div className="overflow-x-auto">
     <table className="min-w-full text-xs sm:text-sm text-gray-300">
       <thead>
         <tr className="border-b border-gray-700 text-left">
@@ -264,10 +265,10 @@ export default function OurStory() {
         ))}
       </tbody>
     </table>
-  </div>
+  </div> */}
 
   {/* Footer */}
-  <div className="flex flex-col sm:flex-row justify-around text-center py-4 border-t border-gray-700">
+  {/* <div className="flex flex-col sm:flex-row justify-around text-center py-4 border-t border-gray-700">
     <div className="mb-3 sm:mb-0">
       <p className="text-gray-400 text-xs sm:text-sm">Total Campaigns</p>
       <p className="font-semibold text-sm sm:text-lg">4</p>
@@ -280,7 +281,14 @@ export default function OurStory() {
       <p className="text-gray-400 text-xs sm:text-sm">Avg. Conversion</p>
       <p className="font-semibold text-sm sm:text-lg text-blue-400">26%</p>
     </div>
-  </div>
+  </div> */}
+{/* </div> */}
+<div className="relative md:w-1/2 flex justify-center">
+  <img
+    src={dashboard}  // replace this with your actual image import or path
+    alt="Mobile App"
+    className="w-[600px] max-w-full object-contain rounded-2xl drop-shadow-2xl"
+  />
 </div>
 
 

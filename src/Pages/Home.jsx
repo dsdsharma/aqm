@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import demoImage from "../Images/hero3.mp4";
+import demoImage from "../Images/hero4.mp4";
 import indiaMap from "../Images/india_map.mp4";
 import tpeImg from "../Images/tpe.png";
 import paytmImg from "../Images/paytm1.png";
@@ -19,7 +19,7 @@ import Marquee from "react-fast-marquee";
 import axisclientImg from "../Images/axisclient1.png";
 
 import { ArrowRight } from "lucide-react";
-import india from "../Images/digital.gif";
+import india from "../Images/digital1.mp4";
 import techVideo from "../Images/techno.mp4";
 import ethvideo from "../Images/control.mp4";
 
@@ -80,8 +80,8 @@ export default function Home() {
   const statsData = [
     { title: "Tele callers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
     { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-sky-500" },
-    { title: "Languages", subtitle: "covered", value: "21", bg: "bg-blue-800" },
-    { title: "Lorem", subtitle: "covered", value: "50", bg: "bg-purple-800" },
+    { title: "Collections", subtitle: "covered", value: "21k Cr p.a.", bg: "bg-blue-800" },
+    { title: "Customers", subtitle: "covered", value: "5 Mn p.a.", bg: "bg-purple-800" },
 
   ];
 
@@ -135,7 +135,7 @@ export default function Home() {
 
 
   return (
-    <section className="bg-black text-white lg:mt-[-20px]">
+    <section className="bg-black text-white lg:mt-[-40px]">
       {/* Hero Section */}
       <video src={demoImage} autoPlay muted loop playsInline />
       <div>
@@ -177,13 +177,17 @@ export default function Home() {
 
         </div>
 
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12">
-          <div className="flex-1 flex justify-center">
-            <img
-              src={india}
-              alt="Digital Banking App"
-              className="h-[450px] md:h-[600px] drop-shadow-2xl"
-            />
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center md:gap-16 gap-12 ">
+          <div className="flex-1 flex justify-center ">
+           <video
+  src={india} // replace this with your actual video variable or path
+  autoPlay
+  loop
+  muted
+  playsInline
+  className="h-[450px] md:h-[600px] drop-shadow-2xl rounded-2xl object-cover"
+/>
+
           </div>
 
           <div className="flex-1 text-center md:text-left space-y-6">
@@ -201,8 +205,8 @@ export default function Home() {
 </ul> */}
 
 {/* in circle with blue tick */}
-
-<ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-2">
+<div className="mb-22">
+<ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-4 ">
   {[
     "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma.",
     "State-of-the-art Tech for Digital Collections.",
@@ -234,9 +238,9 @@ export default function Home() {
                   key={index}
                   className={`${stat.bg} text-white rounded-tl-[30px] rounded-tr-none rounded-bl-none rounded-br-[30px] w-full md:w-1/3 p-6 shadow-md`}
                 >
-                  <p className="text-lg font-medium">{stat.title}</p>
+                  <p className="text-md font-medium">{stat.title}</p>
                   {/* <p className="text-sm">{stat.subtitle}</p> */}
-                  <p className="text-3xl font-bold mt-2">{stat.value}</p>
+                  <p className="text-md font-bold mt-2">{stat.value}</p>
                 </div>
               ))}
             </div>
@@ -247,6 +251,7 @@ export default function Home() {
             >
               Know More <ArrowRight size={18} />
             </Link>
+            </div>
           </div>
         </div>
 
@@ -273,69 +278,61 @@ export default function Home() {
 
           {/* Mobile Video Section */}
 
-        <div className=" container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
-          <div className="md:w-1/2 px-6 md:pl-16">
-  <h3
-  className="text-base md:text-2xl font-bold leading-snug mb-4"
-  style={{ color: "#d8b9ff" }}
->
-  Comprehensive Receivables Management Services
-</h3>
+      <div className="container mx-auto flex flex-col md:flex-row items-center justify-center md:gap-4 gap-6 mt-20">
+  {/* Left Section */}
+  <div className="md:w-1/2 px-4">
+    <h3
+      className="text-base md:text-2xl font-bold leading-snug mb-4"
+      style={{ color: "#d8b9ff" }}
+    >
+      Comprehensive Receivables Management Services
+    </h3>
 
-<h3
-  className="text-sm md:text-xl font-semibold leading-snug mb-3 text-white"
->
-  Complete Outsourcing of the Credit Cycle
-</h3>
+    <h3
+      className="text-sm md:text-xl font-semibold leading-snug mb-3 text-white"
+    >
+      Complete Outsourcing of the Credit Cycle
+    </h3>
 
-
-
-
-        <ul className="space-y-2">
-  {[
-    "AQM to Enable a Level Playing Field for the Industry.",
-    "Outsource the Entire  Collections Function.",
-    "Move From Outsourcing to Business Partnership.",
-  ].map((item, index) => (
-    <li key={index} className="flex items-start text-lg text-gray-300">
-      <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={3}
-          stroke="white"
-          className="w-3 h-3"
-        >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-        </svg>
-      </span>
-      {item}
-    </li>
-  ))}
-</ul>
-
-
-            {/* <Link
-              to="/services"
-              className="inline-flex items-center gap-2 text-sky-400 font-medium hover:underline"
+    <ul className="space-y-2">
+      {[
+        "AQM to Enable a Level Playing Field for the Industry.",
+        "Outsource the Entire Collections Function.",
+        "Move From Outsourcing to Business Partnership.",
+      ].map((item, index) => (
+        <li key={index} className="flex items-start text-lg text-gray-300">
+          <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth={3}
+              stroke="white"
+              className="w-3 h-3"
             >
-              Know More <ArrowRight size={18} />
-            </Link> */}
-          </div>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </span>
+          {item}
+        </li>
+      ))}
+    </ul>
+  </div>
 
-          <div className="flex justify-center md:justify-end mr-16">
-                     <video
-                       autoPlay
-                       muted
-                       loop
-                       playsInline
-                       className="w-[300px] md:w-[380px] rounded-2xl shadow-2xl"
-                     >
-                       <source src={ethvideo} type="video/mp4" />
-                     </video>
-                   </div>
-        </div>
+  {/* Right Section */}
+  <div className="flex justify-center md:justify-start">
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-[300px] md:w-[360px] rounded-2xl shadow-2xl"
+    >
+      <source src={ethvideo} type="video/mp4" />
+    </video>
+  </div>
+</div>
+
       </div>
 
       {/* Stats Section */}
