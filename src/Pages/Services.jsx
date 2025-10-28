@@ -65,9 +65,9 @@ export default function OurStory() {
 
         <ul className="space-y-8">
   {[
-    "Route and time planning engine for FOS visit.",
-    "Resource optimization through roster and schedule managment.",
-    "Seamless handshake between FOS and Call Center.",
+    "Route and time planning engine for FOS visit",
+    "Resource optimization through roster and schedule managment",
+    "Seamless handshake between FOS and Call Center",
   ].map((item, index) => (
     <li key={index} className="flex items-start text-lg text-gray-300">
       <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
