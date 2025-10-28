@@ -21,7 +21,7 @@ import axisclientImg from "../Images/axisclient1.png";
 import { ArrowRight } from "lucide-react";
 import india from "../Images/digital1.mp4";
 import techVideo from "../Images/techno.mp4";
-import ethvideo from "../Images/control.mp4";
+import ethvideo from "../Images/control1.mp4";
 
 import { Shield, Lock, EyeOff } from "lucide-react";
 

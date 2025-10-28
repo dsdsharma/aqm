@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import { CheckCircleIcon, ChartBarIcon } from "@heroicons/react/24/solid";
 import { MdMemory } from "react-icons/md";
-import Services from "../Images/aqmservices1.mp4";
+import Services from "../Images/aqmservices2.mp4";
 import Footer from "./Footer";
 import mobileVideo from "../Images/mobile2.mp4";
-import dashboard from "../Images/dashboard.png"
+import dashboard from "../Images/dashboard1.png"
 
 
 export default function OurStory() {
