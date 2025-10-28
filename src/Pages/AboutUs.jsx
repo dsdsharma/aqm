@@ -12,6 +12,7 @@ export default function HeroSection() {
   useEffect(() => {
     setLoaded(true);
   }, []);
+  
 
   return (
     <>
@@ -37,11 +38,11 @@ export default function HeroSection() {
   className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
 >
   About AQM
-  <img
+  {/* <img
     src={aqmLogo1}
     alt="AQM Logo"
     className="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 inline-block"
-  />
+  /> */}
 </h1>
 
 
@@ -56,17 +57,37 @@ export default function HeroSection() {
   className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-[#d8b9ff] flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
 >
   About AMS Comtel
-  <img
+  {/* <img
     src={aqmLogo2}
     alt="AQM Logo"
     className="w-20 sm:w-24 md:w-32 h-6 sm:h-7 md:h-8 inline-block"
-  />
+  /> */}
 </h1>
 
 
   {/* Subtext */}
   <p className="text-gray-300 max-w-2xl mx-auto mb-10">
-    India’s pioneer collections company. A 35-year-old entity, with marquee & vintage client base, commands a price-premium due to domain expertise and thus, highly profitable.
+    AMS Comtel BPMS Pvt. Ltd. is comprehensive TELE-COLLECTIONS company, founded by a team of senior professionals who have held leadership positions in organizations of stature in banking & telecom companies.
+  </p>
+</div>
+
+<div className="text-center">
+<h1
+  className="text-xl sm:text-2xl md:text-4xl font-bold mb-6 leading-snug text-white flex items-center justify-center gap-2 flex-wrap sm:flex-nowrap"
+>
+
+  OUR VISION
+  {/* <img
+    src={aqmLogo1}
+    alt="AQM Logo"
+    className="w-6 sm:w-7 md:w-8 h-6 sm:h-7 md:h-8 inline-block"
+  /> */}
+</h1>
+
+
+  {/* Subtext */}
+  <p className="text-gray-300 max-w-2xl mx-auto mb-10">
+    To revolutionize collections by leveraging cutting-edge data analytics and AI to create empathetic, efficient, and highly personalized services
   </p>
 </div>
 
@@ -74,7 +95,7 @@ export default function HeroSection() {
 
 
           {/* Client Logos */}
-          <div className="flex flex-wrap justify-center items-center gap-10 opacity-90 mt-16">
+          {/* <div className="flex flex-wrap justify-center items-center gap-10 opacity-90 mt-16">
             <img
               src="https://dummyimage.com/80x40/fff/000&text=Genpact"
               alt="Genpact"
@@ -100,9 +121,9 @@ export default function HeroSection() {
               alt="Nowcom"
               className="h-8 invert"
             />
-          </div>
+          </div> */}
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+          {/* <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               ["2015", "Founding year"],
               ["460+", "Team members"],
@@ -119,7 +140,7 @@ export default function HeroSection() {
                 <p className="text-gray-400">{subtitle}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
       <Footer />

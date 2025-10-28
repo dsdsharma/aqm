@@ -39,9 +39,9 @@ export default function Footer() {
           <NavLink to="/services" className="hover:text-sky-400">
             Services
           </NavLink>
-          <NavLink to="/Caascloud" className="hover:text-sky-400">
+          {/* <NavLink to="/Caascloud" className="hover:text-sky-400">
             CaaS Cloud
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/aboutus" className="hover:text-sky-400">
             About Us
           </NavLink>

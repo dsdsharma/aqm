@@ -38,7 +38,7 @@ import { Shield, Lock, EyeOff } from "lucide-react";
 // import indus from "../Images/indus.jpg";
 import Footer from "../Pages/Footer";
 import { useState, useEffect, useRef } from "react";
-import { Counter } from "./Counter";
+// import { Counter } from "./Counter";
 
 export default function Home() {
   const [loaded, setLoaded] = useState(false);
@@ -78,26 +78,26 @@ export default function Home() {
   };
 
   const statsData = [
-    { title: "Tele callers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
+    { title: "Telecallers", subtitle: "& Backend staff", value: "3500+", bg: "bg-teal-400" },
     { title: "FOS", subtitle: "on Field", value: "2500+", bg: "bg-sky-500" },
-    { title: "Collections", subtitle: "covered", value: "21k Cr p.a.", bg: "bg-blue-800" },
-    { title: "Customers", subtitle: "covered", value: "5 Mn p.a.", bg: "bg-purple-800" },
+    { title: "Collections", subtitle: "covered", value: "21k Cr / Yr", bg: "bg-blue-800" },
+    { title: "Borrowers", subtitle: "covered", value: "5 Mn / Yr.", bg: "bg-purple-800" },
 
   ];
 
  const features = [
   {
-    icon: <Shield size={40} className="text-black mb-4" />,
+    icon: <Shield size={40} className="text-white mb-4" />,
     title: "Highly Secure DPDP compliant",
     desc: "Compliance with security standards & data protection regulations",
   },
   {
-    icon: <Lock size={40} className="text-black mb-4" />,
+    icon: <Lock size={40} className="text-white mb-4" />,
     title: "SSO + Session-level Access Control",
     desc: "Secure authentication and granular permission management for all users",
   },
   {
-    icon: <EyeOff size={40} className="text-black mb-4" />,
+    icon: <EyeOff size={40} className="text-white mb-4" />,
     title: "Field Masking, Tab-only Co-browse, No Full Screen",
     desc: "Enhanced privacy protection during collaborative sessions",
   },
@@ -167,13 +167,14 @@ export default function Home() {
       {/* Digital Banking Section */}
       <div className="bg-black text-white py-20">
         <div className="w-full text-center mb-16">
-         <h1
-  className="text-xl sm:text-2xl md:text-4xl px-2 font-bold"
+      <h1
+  className="text-lg sm:text-xl md:text-3xl px-2 font-bold"
   style={{ color: "#d8b9ff" }}
 >
-  INDIA’S ONLY COMPANY TO HAVE A NATION-WIDE <br />
-  VOICE & FIELD OPERATIONS
+  India’s Only Company to Have a Nation-wide <br />
+  Voice & Field Operations
 </h1>
+
 
         </div>
 
@@ -208,9 +209,9 @@ export default function Home() {
 <div className="mb-22">
 <ul className="text-gray-300 leading-relaxed px-2 text-xl space-y-8 ">
   {[
-    "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma.",
-    "State-of-the-art Tech for Digital Collections.",
-    "Outcome-based Pricing Model.",
+    "AI Solutions for BFSI, Telcos, Utilities, FMCG, Pharma",
+    "State-of-the-art Tech for Digital Collections",
+    "Outcome-based Pricing Model",
   ].map((item, index) => (
     <li key={index} className="flex items-start">
       <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1">
@@ -282,7 +283,7 @@ export default function Home() {
   {/* Left Section */}
   <div className="md:w-1/2 px-4">
     <h3
-      className="text-base md:text-2xl font-bold leading-snug mb-4"
+      className="text-lg md:text-2xl font-bold leading-snug mb-4"
       style={{ color: "#d8b9ff" }}
     >
       Comprehensive Receivables Management Services
@@ -294,11 +295,11 @@ export default function Home() {
       Complete Outsourcing of the Credit Cycle
     </h3>
 
-    <ul className="space-y-2">
+    <ul className="space-y-8">
       {[
-        "AQM to Enable a Level Playing Field for the Industry.",
-        "Outsource the Entire Collections Function.",
-        "Move From Outsourcing to Business Partnership.",
+        "AQM to Enable a Level Playing Field for the Industry",
+        "Outsource the Entire Collections Function",
+        "Move From Outsourcing to Business Partnership",
       ].map((item, index) => (
         <li key={index} className="flex items-start text-lg text-gray-300">
           <span className="bg-blue-600 rounded-full p-1 mr-3 mt-1 flex items-center justify-center">
@@ -443,26 +444,22 @@ export default function Home() {
     SECURE & COMPLIANT
   </h2>
 
-<div className="grid grid-cols-1 md:grid-cols-3 gap-18">
-  {features.map((item, index) => (
-    <div
-      key={index}
-      className="text-center rounded-lg p-6 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl"
-      style={{ backgroundColor: "#f5eef6", borderColor: "#d8b9ff" }}
-    >
-      <div className="flex justify-center">{item.icon}</div>
-      <h3 className="text-lg md:text-xl font-semibold text-black mb-2">
-        {item.title}
-      </h3>
-      <p className="text-sm text-gray-700">{item.desc}</p>
-    </div>
-  ))}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    {features.map((item, index) => (
+      <div
+        key={index}
+        className="text-center rounded-lg p-6 transition-transform duration-300 transform hover:scale-105 hover:shadow-xl border border-gray-500 bg-black"
+      >
+        <div className="flex justify-center mb-3">{item.icon}</div>
+        <h3 className="text-lg md:text-xl font-semibold text-white mb-2">
+          {item.title}
+        </h3>
+        <p className="text-sm text-gray-300">{item.desc}</p>
+      </div>
+    ))}
+  </div>
 </div>
 
-
-
-
-</div>
 
 
       

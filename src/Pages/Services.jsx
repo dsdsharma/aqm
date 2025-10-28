@@ -23,16 +23,17 @@ export default function OurStory() {
     <section className="relative w-full bg-black text-white ">
       {/* ===================== Services Video Section ===================== */}
       <section className="relative bg-black py-12 text-white">
-    <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-center text-sky-400 mt-5">
-  COMPREHENSIVE SUIT OF PHYGITAL SERVICE OFFERINGS
+    <h2 className="text-lg sm:text-2xl md:text-4xl font-bold text-center text-sky-400 mt-5">
+  Comprehensive Suit Of Phygital Service Offerings
 </h2>
 
-<p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4 mt-3">
-  AI Agentic Comms Orchestration
+<p className="text-center text-gray-300 max-w-3xl mx-auto text-xl md:text-2xl px-4 mt-3">
+  AI Agentic Comms Orchestration & Smart Allocation Queues
 </p>
-<p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4">
+
+{/* <p className="text-center text-gray-300 max-w-3xl mx-auto text-lg px-4">
   AI driven smart allocation queues
-</p>
+</p> */}
 
 {/* ✅ Video container (moved higher — almost touching text) */}
 <div className="relative w-full sm:w-[85%] md:w-[60%] aspect-[4/3] md:aspect-[16/9] mx-auto rounded-2xl overflow-hidden shadow-xl mt-1 bg-black flex items-center justify-center">
@@ -53,15 +54,16 @@ export default function OurStory() {
 
 <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 mt-20">
           <div className="md:w-1/2 px-6 md:pl-16">
-  <h3
-  className="text-base md:text-4xl font-bold leading-snug mb-4"
+ <h3
+  className="text-2xl sm:text-3xl md:text-4xl font-semibold leading-snug mb-4"
   style={{ color: "#d8b9ff" }}
 >
-  AI DRIVEN FIELD ENGAGEMENT APPLICATION
+  AI Driven Field Engagement Application
 </h3>
 
 
-        <ul className="space-y-2">
+
+        <ul className="space-y-8">
   {[
     "Route and time planning engine for FOS visit.",
     "Resource optimization through roster and schedule managment.",
@@ -130,15 +132,16 @@ export default function OurStory() {
           {/* Left Side - Text */}
           <div className="w-full md:w-1/2 space-y-4 md:ml-50 px-4 md:px-0 mt-8 md:mt-0">
 <h3
-  className="text-xl sm:text-2xl font-semibold"
+  className="text-2xl sm:text-3xl md:text-4xl font-semibold"
   style={{ color: "#d8b9ff" }}
 >
-  Descriptive, Predictive & Prescriptive Analytics
+  Operational Efficiencies Through Advanced Analytics
 </h3>
-  <p className="text-white text-sm sm:text-base">
-    Operational Efficiencies Through Data Driven Decision Making
-     
-  </p>
+
+  <p className="text-white text-base sm:text-lg">
+  Descriptive, Predictive & Prescriptive Realtime Analytical AI Models
+</p>
+
 
   <ul className="space-y-2 sm:space-y-5 mt-3 sm:mt-4">
     {[
